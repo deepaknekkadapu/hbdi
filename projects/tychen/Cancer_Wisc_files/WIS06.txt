@@ -1,0 +1,241 @@
+Homework 6: submission file hwk06.txt
+
+    Name:    TY Chen
+    User:    chen_user2
+    Host:    vma50
+    Date:    Monday, Feb 25, 2019
+    Time:    14:55
+    USID:    46N582d#X0x5LaHmIvV{19n1q0D2i%12prteqs4uN_hnVeVh3cj!J5K5w:74U1n*SnfeEhcCM}j6M0yhy@vbOe8FG-8YDT
+
+BEGIN QUESTION 1
+    Checking for required files
+
+        Start output of a01.txt
+            QUESTION 1: Short Answers
+            
+            Please do NOT delete any characters in this file.
+            File a01.bak contains a backup copy of this file.
+            
+            Your answers on the lines below should be one work answers. Refer to
+            your printed question for question details.
+            
+            A. DATABASE_DONE
+            
+            B. USER_DONE
+            
+            C. PRIVILEGES_DONE
+            
+            D. ACCESS_DONE
+            
+            E. DONE
+            
+            END OF QUESTION 1: This unedited file contains 330 characters.
+
+        End output of a01.txt
+
+    All files found for question 1.
+END QUESTION 1
+
+BEGIN QUESTION 2
+    Checking for required files
+
+        Start output of a02.txt
+            QUESTION 2: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a02.bak contains a backup copy of this file if you need it.
+            Create your script in the file q02.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 2: This unedited file contains 320 characters.
+
+        End output of a02.txt
+
+
+        Start output of check02.txt
+            Checking username, password and database name changes
+                       OK - username and password changes                              chxq02-A1
+                       OK - createdb.sql changes                                       chxq02-B1
+            
+            Checking database data insertion
+                       OK - database data values (in q02.txt)                          chxq02-C1
+            
+
+        End output of check02.txt
+
+
+        Start output of q02.sh
+            #!/bin/bash
+            #
+            user="h6_tyc"		# change to the mysql username you created
+            pass="passwd"		# change to the mysql password you created
+            
+            ##### THIS IS HOW YOU RUN SQL statement in Unix-like COMMAND LINE
+            mysql -u $user -p$pass < createdb.sql > q02.txt
+            
+
+        End output of q02.sh
+
+    All files found for question 2.
+END QUESTION 2
+
+BEGIN QUESTION 3
+    Checking for required files
+
+        Start output of a03.txt
+            QUESTION 3: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a03.bak contains a backup copy of this file if you need it.
+            Create your script in the file q03.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 3: This unedited file contains 320 characters.
+
+        End output of a03.txt
+
+
+        Start output of check03.txt
+            Check for required files (q03.sh & q03.sql)
+                       OK - q03.sh                                    chxq03-A1
+                       OK - q03.sql                                   chxq03-B1
+            
+            Checking commands in q03.sql
+                       OK - mysql commands                            chxq03-C1
+            
+            Checking database creation
+                       OK - data description                          chxq03-D1
+            
+
+        End output of check03.txt
+
+
+        Start output of q03.sh
+            #!/bin/bash
+            
+            user='h6_tyc'
+            pass='passwd'
+            
+            mysql -u $user -p$pass < q03.sql 2>/dev/null
+
+        End output of q03.sh
+
+    All files found for question 3.
+END QUESTION 3
+
+BEGIN QUESTION 4
+    Checking for required files
+
+        Start output of a04.txt
+            QUESTION 4: Short Answers
+            
+            Please do NOT delete any characters in this file.
+            File a04.bak contains a backup copy of this file.
+            
+            Your answers on the lines below should be one work answers. Refer to
+            your printed question for question details.
+            
+            A. 27
+            
+            B. 640
+            
+            C. 1637
+            
+            D. 1416
+            
+            E. 593
+            
+            END OF QUESTION 4: This unedited file contains 330 characters.
+
+        End output of a04.txt
+
+    All files found for question 4.
+END QUESTION 4
+
+BEGIN QUESTION 5
+    Checking for required files
+
+        Start output of a05.txt
+            QUESTION 5: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a05.bak contains a backup copy of this file if you need it.
+            Create your script in the file q05.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONe
+            
+            END OF QUESTION 5: This unedited file contains 320 characters.
+
+        End output of a05.txt
+
+
+        Start output of check05.txt
+            Checking option Y
+                       OK - # of sql statements                          chxq05-A1
+                       OK - query by year                                chxq05-B1
+            
+            Checking option G
+                       OK - # of sql statements                          chxq05-C1
+                       OK - query by gender                              chxq05-D1
+            
+            Checking invalid option
+                       OK - for bad parameter                            chxq05-E1
+            
+
+        End output of check05.txt
+
+
+        Start output of q05.sh
+            para=$1
+            out_file=q05.sql
+            
+            echo "USE h6db_tyc;" > $out_file
+            echo "SELECT COUNT(*) FROM students; " >> $out_file
+            if [ $para == Y ]; then 
+            
+                ### if para = Y, the number of students in Year 1, 2, 3, ..., 6
+                for year in 1 2 3 4 5 6 ; do
+                    echo "SELECT COUNT(*) FROM students WHERE year = $year; " >> $out_file
+                done
+            
+            elif [ $para == G ]; then 
+            
+                ### if para = G, the number of students by gender
+                for gender in 1 2 ; do
+                    echo "SELECT COUNT(*) FROM students WHERE gender = $gender; " >> $out_file
+                done
+            
+            
+            else
+                echo "The parameter should be either Y(year) or G(gender). " 
+                rm $out_file
+            
+            fi
+            
+
+        End output of q05.sh
+
+    All files found for question 5.
+END QUESTION 5
+
+    Begin summary of file submissions
+        Files needed  = 11
+        Files found   = 11
+        Files missing = 0
+    End summary of file submissions
+
+    Begin summary of question checks
+        Question 1: Correct!         a01.txt - 5 of 5 correct, all files present.
+        Question 2: Correct!         a02.txt - 1 of 1 correct, check02.sh gets correct answer, all files present.
+        Question 3: Correct!         a03.txt - 1 of 1 correct, check03.sh gets correct answer, all files present.
+        Question 4: Correct!         a04.txt - 5 of 5 correct, all files present.
+        Question 5: Correct!         a05.txt - 1 of 1 correct, check05.sh gets correct answer, all files present.
+    Good job! You got all 5 questions right
+    End summary of question checks
+
+Homework 6: submission file hwk06.txt completed

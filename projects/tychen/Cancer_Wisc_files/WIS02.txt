@@ -1,0 +1,34 @@
+Exam 2: submission file exm02.txt
+
+    Name:    TY CHEN
+    User:    chen_user2
+    Host:    vma50
+    Date:    Sunday, Mar 17, 2019
+    Time:    16:22
+    USID:    46R7D1W#30B5IaVmLvk{f981g0I2D%E2xrdessbuW_xnGeshIcp!y272l:p6815*4N2ENHBC1}x2J0ceQ@Vr2aWMy-kYbT
+
+BEGIN QUESTION 1
+    Checking for required files
+
+        Start output of a01.txt
+            QUESTION 1: Short Answers
+            
+            Please do NOT delete any characters in this file.
+            File a01.bak contains a backup copy of this file.
+            
+            Your answers on the lines below should be one work answers. Refer to
+            your printed question for question details.
+            
+            A. FALSE
+            
+            B. FALSE
+            
+            C. FALSE
+            
+            D. TRUE
+            
+            END OF QUESTION 1: This unedited file contains 325 characters.
+
+        End output of a01.txt
+
+    All files found for question 1.

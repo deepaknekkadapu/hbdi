@@ -1,0 +1,21 @@
+#AddType application/x-httpd-php .htm .html
+#AddHandler application/x-httpd-php5 .html
+#<Files index.html>
+#AddType application/x-httpd-php5 .html
+#</Files>
+#RewriteRule ^([^.]+)\.html$ $1.php [L]
+
+
+######  turn PHP to HTML   #####
+#RewriteCond %{THE_REQUEST} ^[A-Z]+\s([^\s]+)\.php\s
+#RewriteRule .* %1.html [R=301,L]
+#RewriteRule ^(.*)\.html$ $1.php
+######  end of turn PHP to HTML
+
+#DocumentRoot /var/www/tychen.us/hbdi/
+ErrorDocument 404 https://tychen.us/hbdi/404.php
+ErrorDocument 403 https://tychen.us/hbdi/403.php
+
+
+### Disable directory listing
+Options -Indexes

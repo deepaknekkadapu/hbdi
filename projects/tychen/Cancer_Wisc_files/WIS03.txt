@@ -1,0 +1,388 @@
+Exam 3: submission file exm03.txt
+
+    Name:    TY Chen
+    User:    chen_user2
+    Host:    vma50
+    Date:    Tueday, Apr 23, 2019
+    Time:    10:13
+    USID:    46O3F2P#k0k5XasmhvA{H9x1V0x2m%x2zrAe8s2u4_Enlelhdcs!q3f1j:V0M1j*dnCeOhBC4}y3a06e6@Prpp6AX-2YjT
+
+BEGIN QUESTION 1
+    Checking for required files
+
+        Start output of a01.txt
+            QUESTION 1: True or False
+            
+            Please do NOT delete any characters in this file. The file a01.bak contains
+            a backup copy of this file. Enter either T or F after each of the letters
+            below. Refer to your printed question for details.
+            
+            A. FALSE
+            
+            B. TRUE
+            
+            C. FALSE
+            
+            D. TRUE
+            
+            END OF QUESTION 1: This unedited file contains 312 characters.
+
+        End output of a01.txt
+
+    All files found for question 1.
+END QUESTION 1
+
+BEGIN QUESTION 2
+    Checking for required files
+
+        Start output of a02.txt
+            QUESTION 2: Short Answers
+            
+            Please do NOT delete any characters in this file.
+            File a02.bak contains a backup copy of this file.
+            
+            Your answers on the lines below should be one work answers. Refer to
+            your printed question for question details.
+            
+            A. 6
+            
+            B. 6
+            
+            C. 12
+            
+            D. Jan
+            
+            END OF QUESTION 2: This unedited file contains 325 characters.
+
+        End output of a02.txt
+
+    All files found for question 2.
+END QUESTION 2
+
+BEGIN QUESTION 3
+    Checking for required files
+
+        Start output of a03.txt
+            QUESTION 3: True or False
+            
+            Please do NOT delete any characters in this file. The file a03.bak contains
+            a backup copy of this file. Enter either T or F after each of the letters
+            below. Refer to your printed question for details.
+            
+            A. TRUE
+            
+            B. FALSE
+            
+            C. TRUE
+            
+            D. FALSE
+            
+            END OF QUESTION 3: This unedited file contains 312 characters.
+
+        End output of a03.txt
+
+    All files found for question 3.
+END QUESTION 3
+
+BEGIN QUESTION 4
+    Checking for required files
+
+        Start output of a04.txt
+            QUESTION 4: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a04.bak contains a backup copy of this file if you need it.
+            Create your script in the file q04.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 4: This unedited file contains 320 characters.
+
+        End output of a04.txt
+
+
+        Start output of check04.txt
+            Checking for all files, output fields and output values
+                       OK - All files processed                             chxq04-A1
+                       OK - Permissions output                              chxq04-B1
+                       OK - Files sizes in output                           chxq04-C1
+            
+
+        End output of check04.txt
+
+
+        Start output of q04.txt
+            data/aladdin.txt -rw-rw-r-- 9897
+            data/bandb.txt -rw-rw-r-- 7542
+            data/dec.txt -r--r--r-- 824
+            data/dopey_dennis.txt -rw-rw-r-- 8888
+            data/emperor.txt -rw-rw-r-- 6199
+            data/fox_life.txt -rw-rw-r-- 11918
+            data/hare.txt -rw-rw-r-- 8014
+            data/horse.txt -rw-rw-r-- 4430
+            data/raccoon.txt -rw-rw-r-- 14267
+            data/slyfox.txt -rw-rw-r-- 8235
+            data/story.txt -r--r--r-- 14267
+            data/three_questions.txt -rw-rw-r-- 8520
+            data/weeping.txt -rw-rw-r-- 5363
+            data/wise_girl.txt -rw-rw-r-- 8104
+
+        End output of q04.txt
+
+    All files found for question 4.
+END QUESTION 4
+
+BEGIN QUESTION 5
+    Checking for required files
+
+        Start output of a05.txt
+            QUESTION 5: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a05.bak contains a backup copy of this file if you need it.
+            Create your script in the file q05.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 5: This unedited file contains 320 characters.
+
+        End output of a05.txt
+
+
+        Start output of check05.txt
+            Checking file processing and calculations
+                       OK - All files processed                            chxq05-A1
+                       OK - Output format & order                          chxq05-B1
+                       OK - Average calculation                            chxq05-C1
+            
+
+        End output of check05.txt
+
+
+        Start output of files.rpt
+            File Name           # chars  # words  # lines 
+            ==================  =======  =======  ======= 
+            data/emperor.txt       6199     1069       96 
+            data/horse.txt         4430      800       75 
+            data/wise_girl.txt     8104     1464      120 
+            data/weeping.txt       5363      961       79 
+            data/raccoon.txt      14267     2673      284 
+            ==================  =======  =======  ======= 
+            # of files: 5; # of characters: 38363; Avg. characters/file = 7672.60
+
+        End output of files.rpt
+
+    All files found for question 5.
+END QUESTION 5
+
+BEGIN QUESTION 6
+    Checking for required files
+
+        Start output of a06.txt
+            QUESTION 6: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a06.bak contains a backup copy of this file if you need it.
+            Create your script in the file q06.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 6: This unedited file contains 320 characters.
+
+        End output of a06.txt
+
+
+        Start output of check06.txt
+            Checking file creation, word changes and difference output
+                       OK - New file created                                    chxq06-A1
+                       OK - Changes made as expected                            chxq06-B1
+                       OK - No additional changes made                          chxq06-C1
+            
+
+        End output of check06.txt
+
+    All files found for question 6.
+END QUESTION 6
+
+BEGIN QUESTION 7
+    Checking for required files
+
+        Start output of a07.txt
+            QUESTION 7: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a07.bak contains a backup copy of this file if you need it.
+            Create your script in the file q07.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 7: This unedited file contains 320 characters.
+
+        End output of a07.txt
+
+
+        Start output of check07.txt
+            Check for all output, and the output fields in each line
+                       OK - Output line count                          chxq07-A1
+                       OK - Output fields                              chxq07-B1
+                       OK - Output order                               chxq07-C1
+            
+
+        End output of check07.txt
+
+
+        Start output of q07.txt
+            FNAME=RUSS LNAME=FRANKS DATE=2014-12-23 COST=43.12
+            FNAME=SUSAN LNAME=SMITH DATE=2014-12-12 COST=12.67
+            FNAME=SINDY LNAME=GOMEZ DATE=2014-12-28 COST=87.88
+            FNAME=ROBERT LNAME=TYLER DATE=2014-12-26 COST=49.33
+            FNAME=RUSS LNAME=FRANKS DATE=2014-12-24 COST=6.75
+            FNAME=SUSAN LNAME=SMITH DATE=2014-12-13 COST=67.22
+            FNAME=SINDY LNAME=GOMEZ DATE=2014-12-07 COST=137.99
+            FNAME=ROBERT LNAME=TYLER DATE=2014-12-09 COST=8.35
+            FNAME=RUSS LNAME=FRANKS DATE=2014-12-25 COST=102.17
+            FNAME=SUSAN LNAME=SMITH DATE=2014-12-18 COST=98.85
+            FNAME=SINDY LNAME=GOMEZ DATE=2014-12-14 COST=23.07
+            FNAME=ROBERT LNAME=TYLER DATE=2014-12-14 COST=32.46
+            FNAME=KYLE LNAME=JAMES DATE=2014-12-25 COST=72.13
+            FNAME=KYLE LNAME=JAMES DATE=2014-12-25 COST=159.89
+            FNAME=NICK LNAME=BLASS DATE=2014-12-16 COST=31.76
+            FNAME=NICK LNAME=BLASS DATE=2014-12-16 COST=31.56
+            FNAME=NICK LNAME=BLASS DATE=2014-12-17 COST=8.29
+            FNAME=NICK LNAME=BLASS DATE=2014-12-17 COST=18.40
+            FNAME=NICK LNAME=BLASS DATE=2014-12-17 COST=49.75
+
+        End output of q07.txt
+
+    All files found for question 7.
+END QUESTION 7
+
+BEGIN QUESTION 8
+    Checking for required files
+
+        Start output of a08.txt
+            QUESTION 8: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a08.bak contains a backup copy of this file if you need it.
+            Create your script in the file q08.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 8: This unedited file contains 320 characters.
+
+        End output of a08.txt
+
+
+        Start output of check08.txt
+            Check for use, create, and inserts
+                       OK - USE statement                               chxq08-A1
+                       OK - CREATE statement                            chxq08-B1
+                       OK - INSERT statements                           chxq08-C1
+                       OK - Inserted values                             chxq08-D1
+            
+
+        End output of check08.txt
+
+
+        Start output of q08.txt
+            USE budget;
+            CREATE IF NOT EXISTS TABLE expenses( name_id INT, fname VARCHAR(25), 
+                	lname VARCHAR(25), item VARCHAR(25), cost DECIMAL(8,2) NOT NULL, 
+                	edate DATE,  expense_id INT NOT NULL AUTO_INCREMENT 
+                	primary key(expense_id));
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 10, RUSS, FRANKS, DINNER, 43.12, 2014-12-23 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 12, SUSAN, SMITH, LUNCH, 12.67, 2014-12-12 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 15, SINDY, GOMEZ, DINNER, 87.88, 2014-12-28 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 21, ROBERT, TYLER, GAS, 49.33, 2014-12-26 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 10, RUSS, FRANKS, BREAKFAST, 6.75, 2014-12-24 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 12, SUSAN, SMITH, DINNER, 67.22, 2014-12-13 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 15, SINDY, GOMEZ, HOTEL, 137.99, 2014-12-07 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 21, ROBERT, TYLER, LUNCH, 8.35, 2014-12-09 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 10, RUSS, FRANKS, DINNER, 102.17, 2014-12-25 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 12, SUSAN, SMITH, HOTEL, 98.85, 2014-12-18 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 15, SINDY, GOMEZ, GAS, 23.07, 2014-12-14 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 21, ROBERT, TYLER, DINNER, 32.46, 2014-12-14 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 18, KYLE, JAMES, DINNER, 72.13, 2014-12-25 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 18, KYLE, JAMES, HOTEL, 159.89, 2014-12-25 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 19, NICK, BLASS, GAS, 31.76, 2014-12-16 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 19, NICK, BLASS, DINNER, 31.56, 2014-12-16 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 19, NICK, BLASS, BREAKFAST, 8.29, 2014-12-17 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 19, NICK, BLASS, LUNCH, 18.40, 2014-12-17 ) 
+             INSERT INTO expenses ( name_id, fname, lname, item, cost, edate ) VALUES ( 19, NICK, BLASS, DINNER, 49.75, 2014-12-17 ) 
+
+        End output of q08.txt
+
+    All files found for question 8.
+END QUESTION 8
+
+BEGIN QUESTION 9
+    Checking for required files
+
+        Start output of a09.txt
+            QUESTION 9: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a09.bak contains a backup copy of this file if you need it.
+            Create your script in the file q09.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 9: This unedited file contains 320 characters.
+
+        End output of a09.txt
+
+
+        Start output of check09.txt
+            Checking sum and average
+                       OK - Value for sum                          chxq09-A1
+                       OK - Average value                          chxq09-B1
+            
+
+        End output of check09.txt
+
+    All files found for question 9.
+END QUESTION 9
+
+BEGIN QUESTION 10
+    Checking for required files
+
+        Start output of a10.txt
+            QUESTION 10: True or False
+            
+            Please do NOT delete any characters in this file. The file a10.bak contains
+            a backup copy of this file. Enter either T or F after each of the letters
+            below. Refer to your printed question for details.
+            
+            A. FALSE
+            
+            B. FALSE
+            
+            C. FALSE
+            
+            D. FALSE
+            
+            E. TRUE
+            
+            F. TRUE
+            
+            END OF QUESTION 10: This unedited file contains 323 characters.
+
+        End output of a10.txt
+
+    All files found for question 10.
+END QUESTION 10
+
+    Begin summary of file submissions
+        Files needed  = 20
+        Files found   = 20
+        Files missing = 0
+    End summary of file submissions
+
+Exam 3: submission file exm03.txt completed

@@ -1,0 +1,26 @@
+Activity 1: submission file lab01.txt
+
+    Name:    TY Chen
+    User:    chen_user
+    Host:    vma50
+    Date:    Tueday, Jan 15, 2019
+    Time:    19:22
+    USID:    45l5117#D0V5KaemDvd{l9B190y2A%9rreuseuv_FnleRhHcG!t2E20:v9g18*fnreoh5Co}91w01af@8n4a9JX-iYhT
+
+BEGIN QUESTION 1
+    Checking for required files
+
+        Start output of check01.txt
+            Checking user accounts
+                       OK - admin accounts created                                            chxq01-A1
+                       OK - user accounts created                                             chxq01-B1
+            
+            Checking directory structure
+                       OK - class directory created                                           chxq01-C1
+                       Not OK - a01 .. a07 created and a01.tar.gz copied ( 7 )                  chxq01-D0
+                       OK - a01 extracted                                                     chxq01-E1
+            
+
+        End output of check01.txt
+
+    All files found for question 1.

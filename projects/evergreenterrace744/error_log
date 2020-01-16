@@ -1,0 +1,193 @@
+[02-Oct-2019 20:55:48 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 20:55:48 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 20:55:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assign_to' in 'field list' in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:284
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(284): PDO->query(' SELECT created...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 284
+[02-Oct-2019 20:59:03 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 20:59:03 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 20:59:03 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assign_to' in 'field list' in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:284
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(284): PDO->query(' SELECT created...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 284
+[02-Oct-2019 20:59:06 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 20:59:06 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 20:59:06 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assign_to' in 'field list' in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:284
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(284): PDO->query(' SELECT created...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 284
+[02-Oct-2019 20:59:35 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 20:59:35 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 20:59:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assign_to' in 'field list' in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:284
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(284): PDO->query(' SELECT created...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 284
+[02-Oct-2019 21:03:21 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:03:21 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:03:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assign_to' in 'field list' in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:284
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(284): PDO->query(' SELECT created...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 284
+[02-Oct-2019 21:03:23 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:03:23 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:03:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assign_to' in 'field list' in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:284
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(284): PDO->query(' SELECT created...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 284
+[02-Oct-2019 21:09:24 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:09:24 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:09:24 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assign_to' in 'field list' in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:284
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(284): PDO->query(' SELECT created...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 284
+[02-Oct-2019 21:09:27 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:09:27 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:09:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'assign_to' in 'field list' in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:284
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(284): PDO->query(' SELECT created...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 284
+[02-Oct-2019 21:12:39 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:12:39 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:12:50 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:12:50 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:14:32 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:14:32 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:14:35 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:14:35 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:36 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:36 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:39 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:39 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:40 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:40 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:41 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:41 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:41 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:41 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:41 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:41 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:42 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:42 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:42 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:42 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:48 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:48 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:56 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:56 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:58 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:58 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:59 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:15:59 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:16:00 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:16:00 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:16:37 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:16:37 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:29:24 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:29:24 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:29:30 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:29:30 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:55:51 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[02-Oct-2019 21:55:51 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:45:13 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:45:13 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:45:13 UTC] PHP Notice:  Undefined index: token in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 383
+[11-Oct-2019 23:45:24 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:45:24 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:45:24 UTC] PHP Notice:  Undefined index: token in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 383
+[11-Oct-2019 23:46:13 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:46:13 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:46:13 UTC] PHP Notice:  Undefined index: token in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 383
+[11-Oct-2019 23:46:53 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:46:53 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:46:53 UTC] PHP Notice:  Undefined index: token in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 383
+[11-Oct-2019 23:51:05 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:51:05 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 2
+[11-Oct-2019 23:51:05 UTC] PHP Notice:  Undefined index: token in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 383
+[12-Oct-2019 00:19:17 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:19:17 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:19:17 UTC] PHP Notice:  Undefined variable: updatePrjDescription in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 154
+[12-Oct-2019 00:19:17 UTC] PHP Notice:  Undefined index: id_project in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 159
+[12-Oct-2019 00:19:17 UTC] PHP Notice:  Undefined variable: id_user in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 162
+[12-Oct-2019 00:19:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:162
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(162): PDO->query('SELECT * FROM u...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 162
+[12-Oct-2019 00:19:22 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:19:22 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:19:22 UTC] PHP Notice:  Undefined variable: updatePrjDescription in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 154
+[12-Oct-2019 00:19:22 UTC] PHP Notice:  Undefined index: id_project in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 159
+[12-Oct-2019 00:19:22 UTC] PHP Notice:  Undefined variable: id_user in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 162
+[12-Oct-2019 00:19:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:162
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(162): PDO->query('SELECT * FROM u...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 162
+[12-Oct-2019 00:23:23 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:23:23 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:23:23 UTC] PHP Notice:  Undefined variable: updatePrjDescription in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 153
+[12-Oct-2019 00:23:23 UTC] PHP Notice:  Undefined index: id_project in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 158
+[12-Oct-2019 00:23:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:161
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(161): PDO->query('SELECT project_...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 161
+[12-Oct-2019 00:25:52 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:25:52 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:25:52 UTC] PHP Notice:  Undefined variable: updatePrjDescription in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 152
+[12-Oct-2019 00:25:52 UTC] PHP Notice:  Undefined index: id_project in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 156
+[12-Oct-2019 00:25:52 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:162
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(162): PDO->query('\nSELECT project...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 162
+[12-Oct-2019 00:25:55 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:25:55 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:25:55 UTC] PHP Notice:  Undefined variable: updatePrjDescription in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 152
+[12-Oct-2019 00:25:55 UTC] PHP Notice:  Undefined index: id_project in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 156
+[12-Oct-2019 00:25:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:162
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(162): PDO->query('\nSELECT project...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 162
+[12-Oct-2019 00:25:55 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:25:55 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:25:56 UTC] PHP Notice:  Undefined variable: updatePrjDescription in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 152
+[12-Oct-2019 00:25:56 UTC] PHP Notice:  Undefined index: id_project in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 156
+[12-Oct-2019 00:25:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:162
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(162): PDO->query('\nSELECT project...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 162
+[12-Oct-2019 00:32:19 UTC] PHP Warning:  include_once(../includes/loader.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:32:19 UTC] PHP Warning:  include_once(): Failed opening '../includes/loader.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 9
+[12-Oct-2019 00:32:19 UTC] PHP Notice:  Undefined variable: updatePrjDescription in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 152
+[12-Oct-2019 00:32:19 UTC] PHP Notice:  Undefined index: id_project in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 156
+[12-Oct-2019 00:32:19 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php:162
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php(162): PDO->query('\nSELECT project...')
+#1 /home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/evergreenterrace744/TP01.php(3): include('/home/i9p3smlun...')
+#2 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 162

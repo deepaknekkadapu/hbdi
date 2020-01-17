@@ -1,0 +1,30 @@
+.nav1 {
+	width            : 70%;
+	overflow         : hidden;
+	position         : sticky;
+	background-color : #782f40;
+	height           : 38px;
+	color            : white;
+}
+.nav1 a {
+	float                : left;
+	display              : block;
+	color                : red;
+	text-align           : center;
+	padding              : 14px 12px;
+	text-decoration-line : none;
+	/*font-size  : 16px;*/
+}
+
+.nav1 a:hover {
+	text-decoration-line : none;
+	background-color     : #ceb888;
+	color                : #782f40;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+	text-decoration  : none;
+	background-color : black;
+	/*color            : #ceb888;*/
+}

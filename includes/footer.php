@@ -20,7 +20,11 @@
 
     <div class="block">
             <span>
+<<<<<<< HEAD
+                <a href="<?php echo $p ?>/support.php"> <i class="fas fa-question"></i> Support </a>
+=======
                 <a href="<?php echo $p ?>/z_archive/support.php"> <i class="fas fa-question"></i> Support </a>
+>>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
             </span>
     </div>
 

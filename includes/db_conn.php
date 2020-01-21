@@ -5,7 +5,7 @@ $host = "localhost";
 $dbname = "hbdi";
 
 $dbuser = "hbdi";
-$password = "redcar@2019";
+$password = "passwd@2020";
 
 $dsn = "mysql:host=$host;dbname=$dbname;charset=$charset";
 $options = [

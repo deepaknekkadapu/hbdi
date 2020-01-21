@@ -1,0 +1,944 @@
+Homework 7: submission file hwk07.txt
+
+    Name:    Ty Chen
+    User:    chen_user2
+    Host:    vma50
+    Date:    Monday, Mar 18, 2019
+    Time:    14:7
+    USID:    45j8D11#P0B5PaimFvm{19J1a0m2n%R2JruessquW_Xnte2hdcl!o7H:x4d1d*BnXekhlCE}x7f04hd@MrEaFMy-eynT
+
+BEGIN QUESTION 1
+    Checking for required files
+
+        Start output of a01.txt
+            QUESTION 1: Short Answers
+            
+            Please do NOT delete any characters in this file.
+            File a01.bak contains a backup copy of this file.
+            
+            Your answers on the lines below should be one work answers. Refer to
+            your printed question for question details.
+            
+            A. 2
+            
+            B. 6
+            
+            C. 3
+            
+            D. 5
+            
+            E. 1
+            
+            END OF QUESTION 1: This unedited file contains 330 characters.
+
+        End output of a01.txt
+
+    All files found for question 1.
+END QUESTION 1
+
+BEGIN QUESTION 2
+    Checking for required files
+
+        Start output of a02.txt
+            QUESTION 2: Computer Activity
+            
+            Please do NOT delete any characters in this file.
+            The file a02.bak contains a backup copy of this file if you need it.
+            
+            Enter DONE on the line below when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 2: This unedited file contains 284 characters.
+
+        End output of a02.txt
+
+
+        Start output of check02.txt
+            Checking q02.env
+                      OK - q02.env found
+                      OK - MYSQL_ADMIN, MYSQL_MGR, MYSQL_PAD and MYSQL_PMG defined
+                      OK - MYSQL_ADMIN and MYSQL_PAD work as defined
+                      OK - MYSQL_MGR and MYSQL_PMG work as defined
+            
+
+        End output of check02.txt
+
+
+        Start output of q02.env
+            export MYSQL_ADMIN="salesadmin"
+            export MYSQL_MGR="salesmgr"
+            export MYSQL_PAD="passwd"
+            export MYSQL_PMG="passwd"
+
+        End output of q02.env
+
+    All files found for question 2.
+END QUESTION 2
+
+BEGIN QUESTION 3
+    Checking for required files
+
+        Start output of a03.txt
+            QUESTION 3: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a03.bak contains a backup copy of this file if you need it.
+            Create your script in the file q03.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 3: This unedited file contains 320 characters.
+
+        End output of a03.txt
+
+
+        Start output of check03.txt
+            Checking for script q03.sh
+                      OK - q03.sh exists and is not empty
+            
+            Checking for q03.sql
+                      OK - q03.sql exists and contains at least 1 select statement
+            
+            Checking contents for q03.sql
+                      OK - "use sales;" statement present
+                      OK - select from owners statements
+                      OK - select from dealers statements
+                      OK - select from agents statements
+            
+
+        End output of check03.txt
+
+
+        Start output of q03.sh
+            #!/bin/bash
+            outfile=q03.sql
+            source ../q02/q02.env
+            
+            
+            echo "USE sales;" > $outfile
+            for owner_id in {1..34}; do
+                echo "SELECT fname, lname, owner_id FROM owners WHERE owner_id = $owner_id;" >> $outfile
+                echo "SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = $owner_id;"  >> $outfile
+                echo "SELECT fname, lname, owner_id FROM agents WHERE owner_id = $owner_id;"  >> $outfile
+            done
+            
+                mysql -u $MYSQL_ADMIN -p$MYSQL_PAD <  $outfile
+
+        End output of q03.sh
+
+
+        Start output of q03.sql
+            USE sales;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 1;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 1;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 1;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 2;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 2;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 2;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 3;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 3;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 3;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 4;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 4;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 4;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 5;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 5;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 5;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 6;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 6;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 6;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 7;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 7;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 7;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 8;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 8;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 8;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 9;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 9;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 9;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 10;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 10;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 10;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 11;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 11;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 11;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 12;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 12;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 12;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 13;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 13;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 13;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 14;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 14;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 14;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 15;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 15;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 15;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 16;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 16;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 16;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 17;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 17;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 17;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 18;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 18;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 18;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 19;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 19;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 19;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 20;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 20;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 20;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 21;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 21;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 21;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 22;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 22;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 22;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 23;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 23;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 23;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 24;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 24;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 24;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 25;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 25;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 25;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 26;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 26;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 26;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 27;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 27;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 27;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 28;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 28;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 28;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 29;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 29;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 29;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 30;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 30;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 30;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 31;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 31;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 31;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 32;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 32;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 32;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 33;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 33;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 33;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 34;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 34;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 34;
+
+        End output of q03.sql
+
+    All files found for question 3.
+END QUESTION 3
+
+BEGIN QUESTION 4
+    Checking for required files
+
+        Start output of a04.txt
+            QUESTION 4: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a04.bak contains a backup copy of this file if you need it.
+            Create your script in the file q04.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 4: This unedited file contains 320 characters.
+
+        End output of a04.txt
+
+
+        Start output of check04.txt
+            Checking environment and script q04.sh
+                       OK - Environment variables defined                           chxq05-A1
+                       OK - Link ../q03/q03.sql to q04.sql                          chxq05-B1
+                       OK - Link ../q02/q02.env to q04.env                          chxq05-C1
+                       OK - mysql run statement                                     chxq05-D1
+            
+            Checking output in q04.txt
+                       OK - fname count                                            chxq05-E1
+                       OK - owner/dealer counts                                    chxq05-F1
+                       OK - M. Isern dealership count                              chxq05-G1
+                       OK - Agent output                                           chxq05-H1
+            
+
+        End output of check04.txt
+
+
+        Start output of q04.sh
+            #!/bin/bash
+            
+            ln -s ../q02/q02.env q04.env
+            ln -s ../q03/q03.sql q04.sql
+            
+            source q04.env
+            
+            mysql -u $MYSQL_MGR -p$MYSQL_PMG < q04.sql > q04.txt
+
+        End output of q04.sh
+
+
+        Start output of q04.sql
+            USE sales;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 1;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 1;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 1;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 2;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 2;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 2;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 3;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 3;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 3;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 4;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 4;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 4;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 5;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 5;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 5;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 6;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 6;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 6;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 7;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 7;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 7;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 8;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 8;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 8;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 9;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 9;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 9;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 10;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 10;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 10;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 11;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 11;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 11;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 12;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 12;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 12;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 13;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 13;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 13;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 14;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 14;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 14;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 15;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 15;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 15;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 16;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 16;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 16;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 17;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 17;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 17;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 18;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 18;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 18;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 19;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 19;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 19;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 20;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 20;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 20;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 21;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 21;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 21;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 22;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 22;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 22;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 23;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 23;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 23;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 24;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 24;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 24;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 25;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 25;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 25;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 26;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 26;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 26;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 27;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 27;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 27;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 28;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 28;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 28;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 29;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 29;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 29;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 30;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 30;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 30;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 31;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 31;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 31;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 32;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 32;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 32;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 33;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 33;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 33;
+            SELECT fname, lname, owner_id FROM owners WHERE owner_id = 34;
+            SELECT COUNT(*), owner_id FROM dealers WHERE owner_id = 34;
+            SELECT fname, lname, owner_id FROM agents WHERE owner_id = 34;
+
+        End output of q04.sql
+
+
+        Start output of q04.txt
+            fname	lname	owner_id
+            Sally	Walker	1
+            COUNT(*)	owner_id
+            2	1
+            fname	lname	owner_id
+            Connie	Russell	1
+            Terry	Jennings	1
+            Michelle	King	1
+            Lloyd	Wood	1
+            Freddie	Harper	1
+            Margie	Ryan	1
+            Marilyn	Hoffman	1
+            Veronica	Clark	1
+            Suzanne	Simpson	1
+            Teresa	Smith	1
+            Leah	Foster	1
+            Edna	Kelley	1
+            Alma	James	1
+            Tyler	Lawson	1
+            fname	lname	owner_id
+            Ed	Tipton	2
+            COUNT(*)	owner_id
+            1	2
+            fname	lname	owner_id
+            Peggy	Watson	2
+            Carla	Moore	2
+            Judith	Shelton	2
+            Marion	Shelton	2
+            Greg	Simpson	2
+            Pauline	Snyder	2
+            fname	lname	owner_id
+            Kelly	Jones	3
+            COUNT(*)	owner_id
+            1	3
+            fname	lname	owner_id
+            Sue	Mitchell	3
+            Billie	Taylor	3
+            Julian	Herrera	3
+            Maria	Smith	3
+            Sonia	Larson	3
+            Jeffery	Graham	3
+            fname	lname	owner_id
+            Patrick	Wallace	4
+            COUNT(*)	owner_id
+            1	4
+            fname	lname	owner_id
+            Carl	Lucas	4
+            Jeanne	Campbell	4
+            Jerry	Russell	4
+            Julian	Miller	4
+            Elaine	Pena	4
+            Angela	Richards	4
+            Patsy	Dixon	4
+            Chad	Wilson	4
+            fname	lname	owner_id
+            Jonathan	Houseman	5
+            COUNT(*)	owner_id
+            1	5
+            fname	lname	owner_id
+            Herman	Brooks	5
+            Christian	Lynch	5
+            Tyrone	Moreno	5
+            Norma	Snyder	5
+            Donna	Marshall	5
+            Douglas	Neal	5
+            Leona	Foster	5
+            Roger	Ford	5
+            fname	lname	owner_id
+            Ted	Frederick	6
+            COUNT(*)	owner_id
+            1	6
+            fname	lname	owner_id
+            Ramon	Wagner	6
+            Rose	Torres	6
+            Greg	Rivera	6
+            Leslie	Dixon	6
+            Veronica	Day	6
+            Francis	Hall	6
+            Ronnie	Porter	6
+            Terri	Fuller	6
+            fname	lname	owner_id
+            Shelly	Walker	7
+            COUNT(*)	owner_id
+            2	7
+            fname	lname	owner_id
+            Phillip	Schmidt	7
+            Francis	Green	7
+            Vincent	Meyer	7
+            Wade	Caldwell	7
+            Joy	Chavez	7
+            Naomi	Mills	7
+            Victor	Soto	7
+            Hilda	Patterson	7
+            Allan	Marshall	7
+            Roland	Fields	7
+            Salvador	Gardner	7
+            Emma	Wright	7
+            Darren	Ross	7
+            David	Alvarez	7
+            fname	lname	owner_id
+            Clark	Yancy	8
+            COUNT(*)	owner_id
+            1	8
+            fname	lname	owner_id
+            Tracy	Parker	8
+            Donna	Rogers	8
+            fname	lname	owner_id
+            Adam	Glenn	9
+            COUNT(*)	owner_id
+            1	9
+            fname	lname	owner_id
+            Randy	Hernandez	9
+            Kim	Hart	9
+            Daryl	Armstrong	9
+            Yvonne	Hicks	9
+            Javier	Spencer	9
+            Dwight	Harris	9
+            fname	lname	owner_id
+            Owen	Harrision	10
+            COUNT(*)	owner_id
+            1	10
+            fname	lname	owner_id
+            Derrick	Burke	10
+            Felicia	Mason	10
+            Joan	Fields	10
+            Donna	Lambert	10
+            Joann	Bishop	10
+            Jennifer	Day	10
+            fname	lname	owner_id
+            Carl	King	11
+            COUNT(*)	owner_id
+            1	11
+            fname	lname	owner_id
+            Edwin	Graves	11
+            Judith	Carroll	11
+            fname	lname	owner_id
+            Julie	Olson	12
+            COUNT(*)	owner_id
+            1	12
+            fname	lname	owner_id
+            Terrence	Watkins	12
+            Marcus	Austin	12
+            Walter	Oliver	12
+            Ruby	Romero	12
+            fname	lname	owner_id
+            Earl	Donner	13
+            COUNT(*)	owner_id
+            1	13
+            fname	lname	owner_id
+            Alan	Reynolds	13
+            Alfredo	Dixon	13
+            Danielle	Reid	13
+            Heather	Edwards	13
+            Leona	Hart	13
+            Terrance	Rose	13
+            Charlotte	Fowler	13
+            Geraldine	Carr	13
+            Stacey	Peters	13
+            fname	lname	owner_id
+            Howard	Olson	14
+            COUNT(*)	owner_id
+            1	14
+            fname	lname	owner_id
+            Jacqueline	Elliott	14
+            Tommy	Woods	14
+            Joan	Bowman	14
+            Natalie	Gonzales	14
+            Maxine	Ramos	14
+            Monica	Shelton	14
+            Kelly	Murphy	14
+            Willie	Hall	14
+            Joan	Gardner	14
+            fname	lname	owner_id
+            Homer	Simpson	15
+            COUNT(*)	owner_id
+            1	15
+            fname	lname	owner_id
+            Joanne	Cooper	15
+            Yolanda	Hunter	15
+            Harold	Gonzales	15
+            Glen	Crawford	15
+            Vickie	Freeman	15
+            Rhonda	Daniels	15
+            Gladys	Murray	15
+            Ida	Rose	15
+            Jon	Horton	15
+            fname	lname	owner_id
+            Samuel	Lance	16
+            COUNT(*)	owner_id
+            1	16
+            fname	lname	owner_id
+            Anita	Lambert	16
+            Peter	Cole	16
+            Nina	Herrera	16
+            Sally	West	16
+            Bobbie	Morris	16
+            Mathew	Rodriguez	16
+            Emily	Medina	16
+            Lynn	Baker	16
+            Ralph	Hansen	16
+            fname	lname	owner_id
+            Winston	Kronnen	17
+            COUNT(*)	owner_id
+            1	17
+            fname	lname	owner_id
+            Judy	Peterson	17
+            Jessica	Richards	17
+            Pauline	Larson	17
+            Tiffany	Watkins	17
+            Danny	Carroll	17
+            Jimmie	Curtis	17
+            Tiffany	Bennett	17
+            Jack	Scott	17
+            Derrick	Rice	17
+            fname	lname	owner_id
+            Phil	Thomas	18
+            COUNT(*)	owner_id
+            1	18
+            fname	lname	owner_id
+            Hazel	Hughes	18
+            Marc	Rodriguez	18
+            Jeanne	Hernandez	18
+            Ernest	Daniels	18
+            Megan	Watkins	18
+            Keith	Graham	18
+            Joann	Rice	18
+            Walter	Sanchez	18
+            fname	lname	owner_id
+            Bill	Travers	19
+            COUNT(*)	owner_id
+            1	19
+            fname	lname	owner_id
+            Glenn	Carroll	19
+            Melanie	Oliver	19
+            Jerome	Powell	19
+            Gwendolyn	King	19
+            Dennis	Evans	19
+            Franklin	Washington	19
+            Ashley	West	19
+            Georgia	Simpson	19
+            fname	lname	owner_id
+            Maureen	Isern	20
+            COUNT(*)	owner_id
+            3	20
+            fname	lname	owner_id
+            Lori	Watson	20
+            Ann	Tucker	20
+            Gail	Thompson	20
+            Colleen	Nichols	20
+            Carlos	Young	20
+            Roger	Soto	20
+            Irene	Morrison	20
+            Gladys	Romero	20
+            Charlene	Simpson	20
+            Jorge	Sullivan	20
+            Ana	White	20
+            Bryan	Young	20
+            Brad	Gregory	20
+            Christy	Stephens	20
+            Julio	Edwards	20
+            Jamie	Medina	20
+            Jesus	Rivera	20
+            Stacey	Lynch	20
+            Danny	Adams	20
+            Violet	Evans	20
+            fname	lname	owner_id
+            Walter	Young	21
+            COUNT(*)	owner_id
+            2	21
+            fname	lname	owner_id
+            Corey	Jenkins	21
+            Mark	Baker	21
+            Calvin	Payne	21
+            Marcus	Arnold	21
+            Mitchell	Holland	21
+            Edna	Garrett	21
+            Esther	Fleming	21
+            Adrian	Green	21
+            Vera	Johnson	21
+            Jeanne	Jensen	21
+            Clifton	Wallace	21
+            Luis	Garcia	21
+            fname	lname	owner_id
+            Barbara	Porter	22
+            COUNT(*)	owner_id
+            1	22
+            fname	lname	owner_id
+            Alicia	Shelton	22
+            Jacob	Fuller	22
+            Josephine	Hall	22
+            Harry	Wallace	22
+            Eduardo	Mcdonald	22
+            Hazel	Sullivan	22
+            fname	lname	owner_id
+            Greg	Freeman	23
+            COUNT(*)	owner_id
+            1	23
+            fname	lname	owner_id
+            Tanya	Perkins	23
+            fname	lname	owner_id
+            John	Palmer	24
+            COUNT(*)	owner_id
+            1	24
+            fname	lname	owner_id
+            Rita	Hill	24
+            Regina	Shelton	24
+            Pearl	Perkins	24
+            Marion	Wright	24
+            Samantha	Howard	24
+            Samuel	Scott	24
+            fname	lname	owner_id
+            Jimmy	Carter	25
+            COUNT(*)	owner_id
+            1	25
+            fname	lname	owner_id
+            Leonard	Rodriguez	25
+            Carolyn	Lawson	25
+            Sheila	Graham	25
+            Roland	Walker	25
+            Arnold	Coleman	25
+            Jose	Lucas	25
+            fname	lname	owner_id
+            Sammy	Samuels	26
+            COUNT(*)	owner_id
+            1	26
+            fname	lname	owner_id
+            Floyd	Romero	26
+            Marshall	Shelton	26
+            fname	lname	owner_id
+            Thomas	Griner	27
+            COUNT(*)	owner_id
+            1	27
+            fname	lname	owner_id
+            Joseph	Harvey	27
+            Gerald	Berry	27
+            Bobby	Wells	27
+            Sean	Knight	27
+            Laura	Burns	27
+            fname	lname	owner_id
+            Jon	Adams	28
+            COUNT(*)	owner_id
+            1	28
+            fname	lname	owner_id
+            Andre	Hicks	28
+            Sean	Spencer	28
+            Brad	Anderson	28
+            Raul	Bryant	28
+            Arthur	Freeman	28
+            fname	lname	owner_id
+            Phil	Duncan	29
+            COUNT(*)	owner_id
+            1	29
+            fname	lname	owner_id
+            Clayton	Wells	29
+            John	Mitchell	29
+            Milton	Morgan	29
+            Katherine	Martinez	29
+            Adam	Shelton	29
+            fname	lname	owner_id
+            Robert	Newton	30
+            COUNT(*)	owner_id
+            1	30
+            fname	lname	owner_id
+            Caroline	Torres	30
+            Ken	Webb	30
+            Georgia	Rice	30
+            Jorge	Rodriquez	30
+            Michele	Bennett	30
+            Bill	Jensen	30
+            fname	lname	owner_id
+            Francis	Riverside	31
+            COUNT(*)	owner_id
+            1	31
+            fname	lname	owner_id
+            Kyle	Jones	31
+            Alfred	Jimenez	31
+            Patsy	Lambert	31
+            Sean	Anderson	31
+            Tracey	Morris	31
+            Alvin	Fox	31
+            fname	lname	owner_id
+            Martin	Zeigler	32
+            COUNT(*)	owner_id
+            1	32
+            fname	lname	owner_id
+            Jerry	Washington	32
+            Hector	Webb	32
+            Brian	Gonzales	32
+            Linda	Carr	32
+            Larry	Fleming	32
+            Amber	Armstrong	32
+            fname	lname	owner_id
+            Hank	Moosebury	33
+            COUNT(*)	owner_id
+            1	33
+            fname	lname	owner_id
+            Jenny	Castro	33
+            Roger	Hudson	33
+            Maureen	Gonzales	33
+            Katrina	Crawford	33
+            Albert	Pearson	33
+            Terri	Craig	33
+            fname	lname	owner_id
+            Edward	Kaplan	34
+            COUNT(*)	owner_id
+            1	34
+            fname	lname	owner_id
+            Roger	Murphy	34
+            Bill	Alvarez	34
+            Jason	Lee	34
+            Darrell	Alvarez	34
+            Courtney	Henry	34
+            Ruth	Rice	34
+
+        End output of q04.txt
+
+    All files found for question 4.
+END QUESTION 4
+
+BEGIN QUESTION 5
+    Checking for required files
+
+        Start output of a05.txt
+            QUESTION 5: Script Creation
+            
+            Please do NOT delete any characters in this file.
+            The file a05.bak contains a backup copy of this file if you need it.
+            Create your script in the file q05.sh. Enter DONE on the line below
+            when you have completed your work.
+            
+            A. DONE
+            
+            END OF QUESTION 5: This unedited file contains 320 characters.
+
+        End output of a05.txt
+
+
+        Start output of check05.txt
+            Checking environment and q05.sql
+                       OK - Environment variables defined                              chxq05-A1
+                       OK - Link ../q02/q02.env to q05.env                             chxq05-B1
+                       OK - sql statements                                             chxq05-C1
+                       OK - use statement                                              chxq05-D1
+            
+            Checking output from mysql file
+                       OK - Dealership count                                           chxq05-E1
+                       OK - Selecting dealerships correctly                            chxq05-F1
+                       OK - Owners with 1 dealership                                   chxq05-G1
+                       OK - Owners with 3 dealerships                                  chxq05-H1
+            
+
+        End output of check05.txt
+
+
+        Start output of q05.sql
+            USE sales; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 1; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 2; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 3; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 4; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 5; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 6; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 7; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 8; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 9; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 10; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 11; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 12; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 13; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 14; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 15; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 16; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 17; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 18; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 19; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 20; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 21; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 22; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 23; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 24; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 25; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 26; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 27; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 28; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 29; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 30; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 31; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 32; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 33; 
+            SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = 34; 
+
+        End output of q05.sql
+
+
+        Start output of q05.sh
+            #!/bin/bash
+            if [ ! -L q05.env ]; then
+                ln -s ../q02/q02.env q05.env
+            fi
+            
+            sqlfile=q05.sql
+            
+            echo "USE sales; " > $sqlfile
+            for owner_id in {1..34}; do
+            
+                echo "SELECT owner_id, COUNT(*) FROM dealers WHERE owner_id = $owner_id; " >> $sqlfile
+            
+            done
+            
+            
+            
+            
+            ##### execute the 
+            source q05.env
+            mysql -u $MYSQL_MGR -p$MYSQL_PMG < q05.sql 
+
+        End output of q05.sh
+
+
+        Start output of q05.env
+            export MYSQL_ADMIN="salesadmin"
+            export MYSQL_MGR="salesmgr"
+            export MYSQL_PAD="passwd"
+            export MYSQL_PMG="passwd"
+
+        End output of q05.env
+
+    All files found for question 5.
+END QUESTION 5
+
+    Begin summary of file submissions
+        Files needed  = 18
+        Files found   = 18
+        Files missing = 0
+    End summary of file submissions
+
+    Begin summary of question checks
+        Question 1: Correct!         a01.txt - 5 of 5 correct, all files present.
+        Question 2: Correct!         a02.txt - 1 of 1 correct, check02.sh gets correct answer, all files present.
+        Question 3: Correct!         a03.txt - 1 of 1 correct, check03.sh gets correct answer, all files present.
+        Question 4: Correct!         a04.txt - 1 of 1 correct, check04.sh gets correct answer, all files present.
+        Question 5: Correct!         a05.txt - 1 of 1 correct, check05.sh gets correct answer, all files present.
+    Good job! You got all 5 questions right
+    End summary of question checks
+
+Homework 7: submission file hwk07.txt completed

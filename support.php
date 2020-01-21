@@ -1,7 +1,14 @@
 <?php
+<<<<<<< HEAD
+include('includes/includes.php');
+?>
+
+
+=======
 include_once('includes/includes.php');
 ?>
 
+>>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
 <div class="container" style="max-width: 900px">
 
     <!-- Start Main -->
@@ -175,7 +182,11 @@ include_once('includes/includes.php');
 
 
             </ul>
+<<<<<<< HEAD
+            <div class="nasa-h3"> Health Big Data Institute </div>
+=======
             <div class="nasa-h3"> Health Big Data Institute</div>
+>>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
             <ul class="nasa-ul">
 
                 <li style="list-style: none">For general inquiries:</li>

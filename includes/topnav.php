@@ -264,7 +264,7 @@ if (isset($_POST['submitLogIn'])) {
         echo "Email address incorrect.";
         error_log("Email address incorrect.", 0);
 
-        echo '<meta http-equiv=REFRESH CONTENT=5;url=https://tychen.us/hbdi/index.php>';
+        echo "<meta http-equiv=REFRESH CONTENT=5;url=$root/hbdi/index.php>";
     } elseif ($isValid) {
         error_log("password is a Match", 0);
         $_SESSION['email_hbdi'] = $result['email'];
@@ -465,7 +465,7 @@ if (isset($_POST['submitSignUp'])) {  //  working.
                 echo "<div class='php-message'>
                         Email taken. Redirecting...
                         </div>;
-                <meta http-equiv=REFRESH CONTENT=5;url=https://tychen.us/hbdi/index.php>";
+                <meta http-equiv=REFRESH CONTENT=5;url=$root/hbdi/index.php>";
                 exit();
             } else {
                 try {
@@ -474,12 +474,12 @@ if (isset($_POST['submitSignUp'])) {  //  working.
                     $stmt->execute([$email, $pass_hash, $username, $name_first, $name_last, $affiliation, $token]);
 
 /// send email with token link
-                    $link = "<a href='tychen.us/hbdi/user/signup_verify.php?key=" . $email . "&verify=" . $token . "'> Click to confirm account creation</a>";
+                    $link = "<a href='$root/user/signup_verify.php?key=" . $email . "&verify=" . $token . "'> Click to confirm account creation</a>";
 /// http://talkerscode.com/webtricks/password-reset-system-using-php.php
                     try {
 // the headers: https://stackoverflow.com/questions/28026932/php-warning-mail-sendmail-from-not-set-in-php-ini-or-custom-from-head
                         $headers = 'MIME-Version: 1.0' . "\r\n";
-                        $headers .= 'From: admin@hbdi<tychen@bashnet.us>' . "\r\n";
+                        $headers .= 'From: admin@hbdi<admin@hbdi.fsu.edu>' . "\r\n";
                         $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
 // the message
@@ -507,7 +507,7 @@ Confirmation email sent. Redirecting...
 
 
 //        Go back to login
-                        echo '<meta http-equiv=REFRESH CONTENT=10;url=https://tychen.us/hbdi/index.php>';
+                        echo "<meta http-equiv=REFRESH CONTENT=10;url=$root/index.php>";
                     } catch (Exception $exception) {
                         echo $exception;
                     }

@@ -1,8 +1,13 @@
 <?php
 include('headers.php');
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+if ((!isset($root)) && (isset($_SESSION['document_root']))) {
+    $root = $_SESSION['document_root'];
+    error_log("$root set,", 0);
+}
+
+//ini_set('display_errors', 1});
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
 
 //////// log user out after 15 minutes /////////////
 //if (isset($_SESSION['timestamp'])) {
@@ -58,7 +63,8 @@ error_reporting(E_ALL);
         <!--        </div>-->
 
         <div class="dropdown-hbdi" style="margin: 2px 0 3px 0 ;padding: 3px 0 0 10px ; height: 40px">
-            <input class="search" style="border-radius: 3px; height: 35px; width: 275px; color: darkgray; padding-left: 3px; outline: 0"
+            <input class="search"
+                   style="border-radius: 3px; height: 35px; width: 275px; color: darkgray; padding-left: 3px; outline: 0"
                    type="text" placeholder="Search HBDI..." aria-label="Search">
             <i class="fas fa-search" style="padding: 5px 5px 0 3px"> </i>
         </div>
@@ -108,98 +114,88 @@ error_reporting(E_ALL);
 
         ?>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+ 
         <a href="<?php echo $p ?>/dashboard.php">
-=======
-        <a href="<?php echo $p ?>/z_archive/dashboard.php">
->>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
-=======
-        <a href="<?php echo $p ?>/dashboard.php">
->>>>>>> 6821422a81d0aac5ee5902edcce3680ce82c5d86
-            Dashboard
-        </a>
+            <a href="<?php echo $p ?>/z_archive/dashboard.php">
+                <a href="<?php echo $p ?>/dashboard.php">
+                    Dashboard
+                </a>
 
-        <div class="dropdown-hbdi">
+                <div class="dropdown-hbdi">
                 <span class="dropbtn-hbdi">
                 <a href="#"> Projects
                 <i class="fa fa-caret-down "></i>
                 </a>
                 </span>
-            <div class="dropdown-hbdi-content" style="z-index: 9999">
-                <?php
-                $stmt = $pdo->prepare("SELECT title_project, title_project_short FROM projects WHERE id_creator = '$uid_hbdi' ");
-                $stmt->execute();
-                $result = $stmt->fetchAll();
-                foreach ($result as $row) {
-                    $title_project_short = $row['title_project_short'];
-                    $title_project = $row['title_project'];
-                    ?>
-                    <a href="<?php echo $p ?>/projects/<?php echo $username_hbdi . "/" . $title_project_short ?>.php">
-                        <?php echo $title_project_short; ?>
-                    </a>
-                    <?php
-                }
-                ?>
-            </div>
-        </div>
+                    <div class="dropdown-hbdi-content" style="z-index: 9999">
+                        <?php
+                        $stmt = $pdo->prepare("SELECT title_project, title_project_short FROM projects WHERE id_creator = '$uid_hbdi' ");
+                        $stmt->execute();
+                        $result = $stmt->fetchAll();
+                        foreach ($result as $row) {
+                            $title_project_short = $row['title_project_short'];
+                            $title_project = $row['title_project'];
+                            ?>
+                            <a href="<?php echo $p ?>/projects/<?php echo $username_hbdi . "/" . $title_project_short ?>.php">
+                                <?php echo $title_project_short; ?>
+                            </a>
+                            <?php
+                        }
+                        ?>
+                    </div>
+                </div>
 
 
-<<<<<<< HEAD:includes/topnav.php
-        <a href="<?php echo $p ?>/datasets_files.php">
-=======
-<<<<<<< HEAD
-        <a href="<?php echo $p ?>/datasets_files.php">
-=======
-        <a href="<?php echo $p ?>/z_archive/datasets_files.php">
->>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
->>>>>>> c1a7cd8f491ed8280acb32631a21366b999683b2:includes/topnav.php_OLD
-            Files
-        </a>
-        <!--        <a href="--><?php //echo $p ?><!--/documents.php"> Documents </a>-->
-        <a href="<?php echo $p ?>/tasks.php"> Tasks </a>
+                <a href="<?php echo $p ?>/datasets_files.php">
+                    <a href="<?php echo $p ?>/datasets_files.php">
+                        <a href="<?php echo $p ?>/datasets_files.php">
+                            Files
+                        </a>
+                        <!--        <a href="--><?php //echo $p ?><!--/documents.php"> Documents </a>-->
+                        <a href="<?php echo $p ?>/tasks.php"> Tasks </a>
 
-        <div class="dropdown-hbdi">
+                        <div class="dropdown-hbdi">
                 <span class="dropbtn-hbdi">
                 <a href="#"> Resources
                 <i class="fa fa-caret-down "></i>
                 </a>
                 </span>
-            <div class="dropdown-hbdi-content" style="z-index: 9999">
-                <a target='_blank' href="https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/slurm-job-script-generator">Slurm</a>
-            </div>
-        </div>
-        <div class="dropdown-hbdi">
-            <?php
-            if (isset($email_hbdi) && isset($uid_hbdi)) {
-                $name_first = $pdo->query("SELECT name_first FROM user WHERE email = '$email_hbdi'")->fetch();
-                $name_first = $name_first['name_first'];
-                ?>
+                            <div class="dropdown-hbdi-content" style="z-index: 9999">
+                                <a target='_blank'
+                                   href="https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/slurm-job-script-generator">Slurm</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-hbdi">
+                            <?php
+                            if (isset($email_hbdi) && isset($uid_hbdi)) {
+                                $name_first = $pdo->query("SELECT name_first FROM user WHERE email = '$email_hbdi'")->fetch();
+                                $name_first = $name_first['name_first'];
+                                ?>
 
-                <!--                <div class="dropdown-hbdi" style="margin: 0 0 0 25px; vertical-align: bottom; border: 1px solid gold">-->
-
-
-                <div class="dropdown-hbdi" style="margin: 0 75px 0 0">
+                                <!--                <div class="dropdown-hbdi" style="margin: 0 0 0 25px; vertical-align: bottom; border: 1px solid gold">-->
 
 
-                    <a href="">
-                        <i class="fas fa-user-circle"></i>
-                        <?php echo "$name_first"; ?>
-                        <i class="fa fa-caret-down"></i>
-                    </a>
-                    <div class="dropdown-hbdi-content">
-                        <a href="#"> My Profile </a>
-                        <a href="<?php echo $p ?>/user/pw_reset.php"> Reset password</a>
-                        <a href="<?php echo $p ?>/user/logout.php"> Logout </a>
-                    </div>
-                </div>
-            <?php } else { ?>
+                                <div class="dropdown-hbdi" style="margin: 0 75px 0 0">
 
-                <?php
-            }
-            }
-            ?>
-        </div>
+
+                                    <a href="">
+                                        <i class="fas fa-user-circle"></i>
+                                        <?php echo "$name_first"; ?>
+                                        <i class="fa fa-caret-down"></i>
+                                    </a>
+                                    <div class="dropdown-hbdi-content">
+                                        <a href="#"> My Profile </a>
+                                        <a href="<?php echo $p ?>/user/pw_reset.php"> Reset password</a>
+                                        <a href="<?php echo $p ?>/user/logout.php"> Logout </a>
+                                    </div>
+                                </div>
+                            <?php } else { ?>
+
+                                <?php
+                            }
+                            }
+                            ?>
+                        </div>
 
     </div>
     <!-- end of bav-hbdi-right -->
@@ -267,9 +263,8 @@ if (isset($_POST['submitLogIn'])) {
     if (empty($result['email'])) {
         echo "Email address incorrect.";
         error_log("Email address incorrect.", 0);
+
         echo '<meta http-equiv=REFRESH CONTENT=5;url=https://tychen.us/hbdi/index.php>';
-        $path = $_SERVER['DOCUMENT_ROOT'];
-        error_log("$path", 0);
     } elseif ($isValid) {
         error_log("password is a Match", 0);
         $_SESSION['email_hbdi'] = $result['email'];
@@ -278,16 +273,9 @@ if (isset($_POST['submitLogIn'])) {
         error_log("Sessions saved.");
 
         unset($_POST['submitLogIn']);
-<<<<<<< HEAD
-        echo "<meta http-equiv=REFRESH CONTENT=3;url=https://tychen.us/hbdi/index.php>";
-=======
-        echo "<meta http-equiv=REFRESH CONTENT=0;url=https://tychen.us/hbdi/index.php>";
->>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
     } else {
         echo " Password incorrect. ";
         error_log('password ERR', 0);
-
-//        echo '<meta http-equiv=REFRESH CONTENT=3;url=login.php>';
     }
 }
 ?>

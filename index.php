@@ -3,6 +3,8 @@
 //error_log("test", 0);
 include("./includes/topnav.php");
 //ini_set("error_log", "~/php_errors.log");
+$_SESSION['document_root'] = __DIR__;
+
 ?>
 
 <div class="container" style="width: 90%; max-width: 900px">

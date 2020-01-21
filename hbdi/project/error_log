@@ -1,0 +1,310 @@
+[21-Jul-2019 02:22:30 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 02:22:35 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 02:25:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:05:35 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:05:41 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:05:50 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:06:23 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:06:23 UTC] PHP Warning:  include(project_process_.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 3
+[21-Jul-2019 03:06:23 UTC] PHP Warning:  include(): Failed opening 'project_process_.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 3
+[21-Jul-2019 03:07:28 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:09:51 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:11:37 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:13:17 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:18:37 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:19:29 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:19:44 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:20:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:21:01 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:21:14 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:21:15 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:21:17 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:21:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:21:50 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:28:06 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:30:13 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:40:39 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:41:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:41:47 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:42:42 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:44:22 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:44:47 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:46:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:46:26 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:46:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 03:46:40 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 04:14:27 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[21-Jul-2019 04:14:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 13:33:18 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 13:48:50 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 13:48:50 UTC] PHP Notice:  Undefined variable: pass_hash in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:48:50 UTC] PHP Notice:  Undefined variable: username in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:48:50 UTC] PHP Notice:  Undefined variable: fname in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:48:50 UTC] PHP Notice:  Undefined variable: lname in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:48:50 UTC] PHP Notice:  Undefined variable: affiliation in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:48:50 UTC] PHP Notice:  Undefined variable: id_affliation in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:52:48 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 13:52:55 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 13:52:55 UTC] PHP Notice:  Undefined variable: pass_hash in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:52:55 UTC] PHP Notice:  Undefined variable: username in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:52:55 UTC] PHP Notice:  Undefined variable: fname in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:52:55 UTC] PHP Notice:  Undefined variable: lname in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:52:55 UTC] PHP Notice:  Undefined variable: affiliation in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:52:55 UTC] PHP Notice:  Undefined variable: id_affliation in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_process.php on line 14
+[22-Jul-2019 13:58:34 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 13:58:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 13:58:52 UTC] PHP Notice:  Undefined index: title in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 9
+[22-Jul-2019 13:58:52 UTC] PHP Notice:  Undefined index: title_short in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 10
+[22-Jul-2019 13:58:52 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 12
+[22-Jul-2019 13:58:52 UTC] PHP Notice:  Undefined variable: title_project in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 19
+[22-Jul-2019 13:58:52 UTC] PHP Notice:  Undefined variable: title_project_short in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 19
+[22-Jul-2019 13:58:52 UTC] PHP Recoverable fatal error:  Object of class DateTime could not be converted to string in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 19
+[22-Jul-2019 14:00:06 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:00:27 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:00:27 UTC] PHP Notice:  Undefined index: title in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 9
+[22-Jul-2019 14:00:27 UTC] PHP Notice:  Undefined index: title_short in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 10
+[22-Jul-2019 14:00:27 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 12
+[22-Jul-2019 14:00:27 UTC] PHP Notice:  Undefined variable: title_project in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 19
+[22-Jul-2019 14:00:27 UTC] PHP Notice:  Undefined variable: title_project_short in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 19
+[22-Jul-2019 14:00:27 UTC] PHP Recoverable fatal error:  Object of class DateTime could not be converted to string in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 19
+[22-Jul-2019 14:01:19 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:01:24 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:01:24 UTC] PHP Notice:  Undefined index: title in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 9
+[22-Jul-2019 14:01:24 UTC] PHP Notice:  Undefined index: title_short in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 10
+[22-Jul-2019 14:01:24 UTC] PHP Recoverable fatal error:  Object of class DateTime could not be converted to string in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 12
+[22-Jul-2019 14:03:32 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:03:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:03:38 UTC] PHP Notice:  Undefined index: title in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 9
+[22-Jul-2019 14:03:38 UTC] PHP Notice:  Undefined index: title_short in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 10
+[22-Jul-2019 14:03:38 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[22-Jul-2019 14:03:38 UTC] PHP Notice:  Undefined variable: title_project in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 20
+[22-Jul-2019 14:03:38 UTC] PHP Notice:  Undefined variable: title_project_short in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 20
+[22-Jul-2019 14:06:24 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:07:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:07:02 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[22-Jul-2019 14:13:29 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:13:50 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:22:31 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:23:39 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:23:40 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:23:42 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:25:00 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:25:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:25:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:25:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:26:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:26:12 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:26:13 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:26:15 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:26:50 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:26:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:26:55 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:26:57 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:27:31 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:27:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:27:36 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:28:54 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:28:55 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:30:10 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:30:15 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:30:47 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:30:47 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[22-Jul-2019 14:30:51 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:33:05 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:33:54 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:33:54 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[22-Jul-2019 14:34:51 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:35:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:36:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:36:10 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:36:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:36:47 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:36:57 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:37:33 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 14:37:49 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 15:15:21 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 15:15:49 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[22-Jul-2019 15:15:49 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[22-Jul-2019 15:15:53 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 1
+[23-Jul-2019 02:54:30 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 02:54:31 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:36:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:36:45 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:37:25 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:37:25 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:37:25 UTC] PHP Notice:  Undefined index: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 7
+[23-Jul-2019 03:37:25 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 03:37:29 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:37:29 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:43:34 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:44:10 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:45:12 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:45:13 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:49:30 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:49:52 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:50:12 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:50:12 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:50:32 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:50:32 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:50:35 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:50:35 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:50:38 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:50:38 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:50:39 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:50:39 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:50:41 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:50:41 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:51:37 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:51:37 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:51:40 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:51:40 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:52:57 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:52:57 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:54:49 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:54:49 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:55:54 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:55:54 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:56:34 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:56:34 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:56:37 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:56:37 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:56:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:56:59 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:57:01 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:57:01 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:57:03 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:57:03 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:58:17 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:58:17 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 03:58:20 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 03:58:20 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 14:31:23 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:31:23 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 14:32:24 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:32:24 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 14:32:30 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:32:30 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 14:32:50 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:34:35 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:34:35 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 12
+[23-Jul-2019 14:34:39 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:46:37 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:47:14 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:47:14 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 12
+[23-Jul-2019 14:47:14 UTC] PHP Warning:  Use of undefined constant w - assumed 'w' (this will throw an Error in a future version of PHP) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 34
+[23-Jul-2019 14:47:18 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:52:44 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:53:15 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:53:15 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 14:53:15 UTC] PHP Warning:  Use of undefined constant w - assumed 'w' (this will throw an Error in a future version of PHP) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 35
+[23-Jul-2019 14:53:19 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:57:34 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:57:34 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:58:13 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 14:58:13 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 14:58:13 UTC] PHP Warning:  Use of undefined constant w - assumed 'w' (this will throw an Error in a future version of PHP) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 35
+[23-Jul-2019 14:58:17 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 15:08:40 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 15:09:04 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 15:09:04 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 15:09:04 UTC] PHP Warning:  Use of undefined constant w - assumed 'w' (this will throw an Error in a future version of PHP) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 36
+[23-Jul-2019 15:09:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 15:15:19 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 15:15:41 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 15:15:41 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 15:15:41 UTC] PHP Warning:  Use of undefined constant w - assumed 'w' (this will throw an Error in a future version of PHP) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 36
+[23-Jul-2019 15:15:45 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/headers.php on line 3
+[23-Jul-2019 15:22:29 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 15:22:29 UTC] PHP Warning:  Use of undefined constant w - assumed 'w' (this will throw an Error in a future version of PHP) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 36
+[23-Jul-2019 15:29:03 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 15:29:03 UTC] PHP Notice:  Undefined variable: myfile in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 52
+[23-Jul-2019 15:29:03 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, null given in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 52
+[23-Jul-2019 15:29:03 UTC] PHP Notice:  Undefined variable: myfile in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 53
+[23-Jul-2019 15:29:03 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 53
+[23-Jul-2019 15:31:21 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 15:31:21 UTC] PHP Notice:  Undefined variable: myfile in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 53
+[23-Jul-2019 15:31:21 UTC] PHP Warning:  fwrite() expects parameter 1 to be resource, null given in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 53
+[23-Jul-2019 15:31:21 UTC] PHP Notice:  Undefined variable: myfile in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 54
+[23-Jul-2019 15:31:21 UTC] PHP Warning:  fclose() expects parameter 1 to be resource, null given in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 54
+[23-Jul-2019 15:41:44 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 15:49:55 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 16:46:12 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[23-Jul-2019 16:47:23 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 16:47:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 1 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php:27
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php(27): PDO->query('SELECT (title_p...')
+#1 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 27
+[23-Jul-2019 16:48:18 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 16:48:18 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 1 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php:27
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php(27): PDO->query('SELECT (title_p...')
+#1 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 27
+[23-Jul-2019 16:49:49 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 16:49:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 1 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php:27
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php(27): PDO->query('SELECT (title_p...')
+#1 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 27
+[23-Jul-2019 16:50:17 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 16:50:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '@gmail.com' at line 1 in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php:27
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php(27): PDO->query('SELECT (title_p...')
+#1 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 27
+[23-Jul-2019 16:53:42 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 16:53:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php:27
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php(27): PDO->query('SELECT (title_p...')
+#1 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 27
+[23-Jul-2019 16:54:20 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 16:54:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php:27
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php(27): PDO->query('SELECT (title_p...')
+#1 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 27
+[23-Jul-2019 17:05:20 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 17:05:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php:27
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php(27): PDO->query('SELECT (title_p...')
+#1 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 27
+[23-Jul-2019 17:06:30 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 17:06:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php:27
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php(27): PDO->query('SELECT (title_p...')
+#1 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 27
+[23-Jul-2019 17:06:51 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 17:06:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php:27
+Stack trace:
+#0 /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php(27): PDO->query('SELECT (title_p...')
+#1 {main}
+  thrown in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 27
+[23-Jul-2019 17:07:28 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 17:07:28 UTC] PHP Notice:  Undefined variable: data in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 32
+[23-Jul-2019 17:07:28 UTC] PHP Warning:  Use of undefined constant w - assumed 'w' (this will throw an Error in a future version of PHP) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 62
+[23-Jul-2019 17:09:11 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 17:11:06 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 17:11:06 UTC] PHP Warning:  Use of undefined constant w - assumed 'w' (this will throw an Error in a future version of PHP) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 63
+[23-Jul-2019 17:11:32 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 17:28:05 UTC] PHP Notice:  Undefined index: granted_by in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 13
+[23-Jul-2019 17:28:05 UTC] PHP Warning:  Use of undefined constant w - assumed 'w' (this will throw an Error in a future version of PHP) in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 64
+[23-Jul-2019 17:35:31 UTC] PHP Warning:  fopen(/home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/tychen/TP05.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 64
+[23-Jul-2019 17:36:54 UTC] PHP Warning:  fopen(/home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/tychen//TP06.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 64
+[23-Jul-2019 17:40:39 UTC] PHP Warning:  fopen(/home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/'tychen'//TP07.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 64
+[23-Jul-2019 17:42:50 UTC] PHP Warning:  fopen(/home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/'tychen'/TP08.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 64
+[23-Jul-2019 17:43:47 UTC] PHP Warning:  fopen(/home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/tychen/TP09.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 64
+[23-Jul-2019 17:46:17 UTC] PHP Warning:  fopen(/home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/tychen/TP10.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 64
+[23-Jul-2019 17:51:45 UTC] PHP Warning:  fopen(/home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/tychen/TP11.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 64
+[23-Jul-2019 17:54:13 UTC] PHP Warning:  fopen(/home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/tychen/TP12.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 65
+[23-Jul-2019 17:56:30 UTC] PHP Warning:  fopen(/home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/tychen/TP13.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 66
+[23-Jul-2019 17:57:42 UTC] PHP Warning:  fopen(/home/i9p3smlunh90/public_html/tychen.us/hbdi/projects/'tychen'/TP14.php): failed to open stream: No such file or directory in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 66
+[23-Jul-2019 17:59:29 UTC] PHP Warning:  mkdir(): File exists in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 56
+[23-Jul-2019 18:01:49 UTC] PHP Warning:  mkdir(): File exists in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 56
+[23-Jul-2019 18:03:49 UTC] PHP Warning:  mkdir(): File exists in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_new_process.php on line 56
+[24-Jul-2019 04:01:59 UTC] PHP Notice:  Undefined variable: email_hbdi in /home/i9p3smlunh90/public_html/tychen.us/hbdi/includes/topnav.php on line 53
+[25-Jul-2019 16:04:45 UTC] PHP Notice:  Undefined variable: _SESSION in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 10
+[25-Jul-2019 16:04:46 UTC] PHP Notice:  Undefined variable: _SESSION in /home/i9p3smlunh90/public_html/tychen.us/hbdi/project/project_view.php on line 11

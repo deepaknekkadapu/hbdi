@@ -1,0 +1,713 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+	margin  : 0;
+	padding : 0;
+}
+
+.container {
+	width            : 80%;
+	max-width        : 900px;
+	margin           : auto;
+	padding          : 0 0 45px 500px;
+	background-color : #eee;
+	/*border           : 1px solid red;*/
+	border           : 1px solid #e3e3e3;
+	display          : block;
+	border-radius    : 3px;
+	/*overflow         : auto;*/
+}
+
+#page-wrapper {
+	position : relative;
+	overflow : hidden;
+	/*width: 80%;*/
+}
+
+/*navbar is a bootstrap class*/
+.navbar {
+	max-width        : 900px;
+	margin           : 0 auto;
+	height           : 39px;
+	background-color : #782f40;
+	color            : white;
+	/*overflow         : hidden;*/ /* THIS WILL hide the dropdown items*/
+}
+
+
+.navbar .nav-right {
+	/*display              : inline-block;*/
+	/*float : right;*/
+	/*text-decoration-line : none;*/
+	/*min-width            : auto;*/
+	/*height               : 38px;*/
+	/*padding-top    : 10px;*/
+	/*padding-bottom : 5px;*/
+}
+
+.nav-item {
+	padding         : 0 8px 0 8px;
+	list-style-type : none;
+	/*position : relative;*/
+	/*display  : inline-block;*/
+}
+
+.navbar a {
+	/*float                : right;*/
+	/*display              : block;*/
+	color                : lightgray;
+	text-align           : center;
+	padding              : 0;
+	text-decoration-line : none;
+	/*border               : 1px solid gold;*/
+	/*height               : 38px*/
+
+}
+
+.navbar a:hover {
+	text-decoration-line : none;
+	/*background-color     : #ceb888;*/
+	color                : #fff;
+	/*border               : 1px solid red;*/
+}
+
+
+/* Add a color to the active/current link */
+.navbar a.active {
+	text-decoration  : none;
+	background-color : black;
+	/*color            : #ceb888;*/
+}
+
+.dropdown {
+	position : relative;
+	display  : inline-block;
+}
+
+.dropdown-item {
+	list-style-type : none;
+	padding         : 1px 5px 1px 15px;
+	width           : auto;
+}
+.dropdown-item a:hover {
+	/*background-color : #ddd;*/
+	color       : #555;
+	font-weight : bold;
+}
+.dropdown .dropbtn {
+	font-size        : 16px;
+	border           : none;
+	outline          : none;
+	color            : white;
+	/*padding: 14px 16px;*/
+	padding          : 4px 6px;
+	background-color : inherit;
+	font-family      : inherit; /* Important for vertical align on mobile phones */
+	margin           : 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+	/*display          : inline;*/
+	display          : none;
+	position         : absolute;
+	background-color : #f9f9f9;
+	min-width        : 160px;
+	box-shadow       : 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	padding          : 12px 16px;
+	z-index          : 4;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	float           : none;
+	color           : black;
+	padding         : 2px 16px;
+	text-decoration : none;
+	display         : block;
+	text-align      : left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+	background-color : #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display : block;
+	z-index : 1;
+}
+
+.navbar ul li a {
+	color : white; /* this works!!!!!!!!!!!!! #CEB888*/
+	/*background-color : #782f40; !* work on menu elements *!*/
+	/*max-height : 39px;*/
+}
+
+
+.dropdown:hover > .dropdown-menu {
+	display    : block;
+	background : #915664;
+	/*width: fit-content;*/
+}
+
+.dropdown > .dropdown-toggle:active {
+	/*Without this, clicking will make it sticky*/
+	pointer-events : none;
+}
+
+
+/*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal*/
+/* The Modal (background) */
+.modal {
+	display          : none; /* Hidden by default */
+	position         : fixed; /* Stay in place */
+	z-index          : 1; /* Sit on top */
+	padding-top      : 100px; /* Location of the box */
+	left             : 0;
+	top              : 0;
+	width            : 100%; /* Full width */
+	height           : 100%; /* Full height */
+	overflow         : auto; /* Enable scroll if needed */
+	background-color : rgb(0, 0, 0); /* Fallback color */
+	background-color : rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.preview-modal {
+	margin           : auto;
+	display          : none; /* Hidden by default */
+	position         : fixed; /* Stay in place */
+	z-index          : 1; /* Sit on top */
+	padding-top      : 100px; /* Location of the box */
+	left             : 200px;
+	top              : 100px;
+	width            : 50%; /* Full width */
+	height           : 50%; /* Full height */
+	overflow         : auto; /* Enable scroll if needed */
+	background-color : rgb(0, 0, 0); /* Fallback color */
+	background-color : rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	border-radius    : 5px;
+}
+.preview-modal-content {
+	background-color : #fefefe;
+	margin           : auto;
+	padding          : 20px;
+	border           : 1px solid #888;
+	width            : 400px;
+	min-height       : 50%;
+	border-radius    : 3px;
+}
+
+/* Modal Content */
+.modal-content {
+	background-color : #fefefe;
+	margin           : auto;
+	padding          : 20px;
+	border           : 1px solid #888;
+	width            : 900px;
+	min-height       : 50%;
+}
+
+/* The Close Button */
+.close {
+	color       : #aaa;
+	float       : right;
+	font-size   : 28px;
+	font-weight : bold;
+}
+
+.close:hover,
+.close:focus {
+	color           : #000;
+	text-decoration : none;
+	cursor          : pointer;
+}
+
+#get-start {
+	align-items    : center;
+	display        : flex;
+	flex-direction : column;
+	/*height         : 150px;*/
+	justify-items  : center;
+	/*margin-top     : 75px;*/
+	text-align     : center;
+}
+#get-start h1 {
+	margin        : 20px 0;
+	text-align    : center;
+	align-content : center;
+}
+#form input {
+	display : block;
+
+}
+/*#email {*/
+/*	margin        : 0 auto;*/
+/*	width         : 220px;*/
+/*	height        : 25px;*/
+/*	padding       : 0 5px;*/
+/*	border        : 1px solid black;*/
+/*	border-radius : 2px;*/
+/*}*/
+
+
+.grid {
+	/*display : flex;*/
+	/*margin-bottom: 25px;*/
+	margin : 0;
+}
+
+.feature-logo {
+	font-size  : 50px;
+	text-align : center;
+	width      : 10%;
+	color      : orange;
+	display    : inline-block;
+}
+
+.feature-desc {
+	width          : 80%;
+	display        : inline-block;
+	vertical-align : center;
+}
+.feature-desc h3 {
+	font-size     : 20px;
+	padding-left  : 3px;
+	margin-bottom : 0;
+}
+.feature-desc p {
+	font-size : 14px;
+	color     : #2d2d2d;
+}
+
+#video {
+	width     : 100%;
+	max-width : 800px;
+	display   : block;
+}
+
+section, footer {
+	width  : 75%;
+	margin : 0 auto;
+	/*background-color: ;*/
+}
+
+#header {
+	position         : fixed;
+	top              : 0;
+	min-height       : 75px;
+	padding          : 0px 20px;
+	display          : flex;
+	justify-content  : space-around;
+	align-items      : center;
+	background-color : #eee;
+	max-width        : 100%;
+}
+
+#header-img {
+	display : flex;
+	width   : 25%;
+	height  : 5%;
+}
+
+.logo {
+	width          : 10%;
+	vertical-align : bottom;
+}
+
+@media (max-width : 650px) {
+	.logo {margin-top : 15px;
+		width           : 100%;
+		position        : relative;
+	}
+}
+
+.logo img {
+	width           : auto;
+	height          : auto;
+	max-width       : 100px;
+	display         : flex;
+	/*display:  inline-flex;*/
+	justify-content : center;
+	align-items     : center;
+	text-align      : center;
+	margin-left     : 30%;
+	/*vertical-align: bottom;*/
+}
+@media (max-width : 650px) {
+	.logo img {
+		margin : 0 auto;
+	}
+}
+
+p {
+	/*font-family   : 'Open Sans', sans-serif;*/
+	font-size     : 16px;
+	color         : #434343;
+	line-height   : 24px !important;
+	text-align    : left;
+	/*line-height: 26px !important;*/
+	margin        : 0 !important;
+	border        : 3px;
+	padding       : 5px 3px 5px 3px;
+	margin-top    : 5px;
+	margin-bottom : 5px;
+	margin-right  : 5%;
+	margin-left   : 5%;
+}
+
+.dashboard-wrapper {
+	background-color : blue;
+	width            : 100%;
+}
+
+.dashboard-wrapper .grid-container {
+	display               : grid;
+	grid-template-columns : auto auto;
+	background-color      : #eee;
+	/*background-color : red;*/
+	border                : 1px solid white;
+	width                 : 100%;
+	max-width             : 880px;
+}
+
+.dashboard-wrapper .grid-container .grid-block {
+	background-color : #eee;
+	/*background-color : red;*/
+	/*border           : ;*/
+	width            : 100%;
+	max-width        : 415px;
+	font-size        : 14px;
+	overflow         : hidden;
+	padding          : 2px;
+}
+
+/*block header*/
+.dashboard-wrapper .grid-container .grid-block .block-header {
+	padding : 0 1px 0 0;
+	margin  : 0;
+
+	/*height : 20px;*/
+	/*border : 1px solid darkgrey; */
+	/*border-radius : 2px;*/
+}
+
+.grid-container .grid-block .block-header .block-title {
+	font-weight : bold;
+	padding     : 1px 5px 0 2px;
+	/*float       : left;*/
+	/*text-align  : left;*/
+}
+
+.grid-container .grid-block .block-header .block-nav {
+	float     : right;
+	display   : inline;
+	padding   : 2px 5px 0 5px;
+	font-size : 10px;
+	color     : darkgrey;
+}
+
+.grid-container .grid-block .block-item {
+	float         : left;
+	padding       : 3px 0 3px 2px;
+	/*margin        : 1px;*/
+	/*border        : 1px solid lightgray;*/
+	border-radius : 2px;
+	white-space   : nowrap;
+	overflow      : hidden;
+	text-overflow : ellipsis;
+	width         : 75%;
+}
+
+.block-item {
+	float         : left;
+	padding       : 3px 0 3px 20px;
+	/*margin        : 1px;*/
+	/*border        : 1px solid lightgray;*/
+	/*border-radius : 2px;*/
+	white-space   : nowrap;
+	overflow      : hidden;
+	text-overflow : ellipsis;
+	/*width         : 75%;*/
+}
+
+.dashboard-block .block-item a {
+	text-decoration-line : none;
+}
+
+.grid-block .postfix {
+	float     : right;
+	/*position  : relative;*/
+	/*display   : inline-block;*/
+	/*padding   : 5px 0 0 5px;*/
+	color     : gray;
+	font-size : 4px;
+	overflow  : hidden;
+}
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width : 475px) {
+	.navbar a, .navbar input[type=text] {
+		float      : none;
+		display    : block;
+		text-align : left;
+		width      : 100%;
+		padding    : 3px 0;
+		margin     : 2px 0;
+	}
+
+}
+
+#form {
+
+}
+
+#email {
+	/*alignment: center;*/
+	border        : 2px gray;
+	border-radius : 2px;
+	display       : flex;
+	/*padding-bottom: 30px;*/
+	height        : 35px;
+	margin-bottom : 20px;
+	margin-top    : 20px;
+	padding-left  : 5px;
+	width         : 300px;
+}
+
+.btn {
+	alignment        : center;
+	background-color : orange;
+	border-radius    : 2px;
+	cursor           : pointer;
+	display          : block;
+	font-size        : 1em;
+	font-weight      : 900;
+	/*border: 3px black solid;*/
+	height           : 35px;
+	/*background: transparent;*/
+	padding          : 0 24px;
+	text-transform   : uppercase;
+}
+.btn-primary {
+	/*background-color : #2d2d2d;*/
+	/*width: 100px;*/
+	/*padding: 0 0 5px 10px;*/
+}
+
+#submit {
+
+}
+
+.grid-container {
+	display               : grid;
+	grid-template-columns : auto auto auto;
+	background-color      : red;
+	padding               : 10px;
+	grid-gap              : 10px;
+}
+.grid-item {
+	background-color : green;
+	border           : 1px solid rgba(0, 0, 0, 0.8);
+	padding          : 20px;
+	font-size        : 30px;
+}
+
+#footer-wrapper {
+	/*background-color : #333; !* Black background color *!*/
+	width      : 100%;
+	/*margin-left      : 17.3%;*/
+	/*max-width        : 900px;*/
+	/*display          : flex;*/
+	/*align-items      : center;*/
+	/*justify-content  : center;*/
+	/*margin           : 0 auto;*/
+	/*text-align       : center;*/
+	/*align-content    : center;*/
+	/*align-self       : center;*/
+	/*alignment        : center;*/
+	position   : fixed; /* Make it stick/fixed */
+	bottom     : 0;
+	z-index    : 1;
+
+	transition : top 0.3s; /* Transition effect when sliding down (and up) */
+	/*border           : 1px solid yellow;*/
+}
+
+#footer {
+	width                 : 90%;
+	max-width             : 900px;
+	margin                : 0 auto;
+	padding               : 3px;
+
+	display               : grid;
+	grid-template-columns : auto auto auto auto;
+	justify-content       : space-evenly;
+
+	font-size             : 12px; color : #878787;
+	background-color      : #eee;
+	/*border                : 1px solid purple;*/
+	/*transition            : bottom 0.3s;*/
+}
+
+
+.tab {
+	display : none;
+}
+
+
+input[type='checkbox'] {
+	float : left;
+	width : 20px;
+}
+input[type='checkbox'] + label {
+	display : block;
+	width   : 30px;
+}
+
+.php-message {
+	position : relative; top : 25px; margin : auto; width : 350px; text-align : center;
+}
+
+.nasa-h2 {
+	font-size : 1.75rem; font-weight : 700; color : #782f40;
+}
+.nasa-h3 {
+	font-size : 1.5rem; font-weight : 500; color : #782f40; padding-left : 5px;
+}
+.nasa-ul {
+	position : relative; left : 35px;
+}
+
+.collapsible {
+	background-color : #eee;
+	/*color: white;*/
+	cursor           : pointer;
+	padding          : 5px 5px 5px 5px;
+	width            : 100%;
+	border           : none;
+	text-align       : left;
+	outline          : none;
+	font-size        : 15px;
+}
+.active, .collapsible:hover {
+	background-color : #d9d9d9;
+}
+.content {
+	padding          : 0 18px;
+	display          : none;
+	overflow         : hidden;
+	background-color : #f1f1f1;
+}
+
+.signup_row {
+	margin-top    : 10px;
+	padding       : 0 10px;
+	font-size     : 14px;
+	height        : 40px;
+	border-radius : 4px;
+	width         : 100%; border : solid 1px grey;
+}
+
+
+.open-button {
+	background-color : #555;
+	color            : white;
+	/*padding          : 16px 20px;*/
+	border           : none;
+	cursor           : pointer;
+	opacity          : 0.8;
+	/*position: fixed;*/
+	/*bottom: 23px;*/
+	/*right: 28px;*/
+	/*width: 280px;*/
+	/* TY Chen below*/
+	position         : relative;
+	left             : 10px;
+	width            : 150px;
+	padding          : 3px 5px;
+	border-radius    : 5px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+	display  : none;
+	/*position: fixed;*/
+	/*bottom: 0;*/
+	/*right: 15px;*/
+	position : relative; /* added by ty chen */
+	top      : 10px; /* added by me */
+	border   : 3px solid #f1f1f1;
+	z-index  : 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+	max-width        : 275px;
+	padding          : 10px;
+	background-color : white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+	width      : 100%;
+	padding    : 15px;
+	margin     : 5px 0 22px 0;
+	border     : none;
+	background : #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+	background-color : #ddd;
+	outline          : none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+	background-color : #bbb;
+	color            : white;
+	padding          : 16px 20px;
+	border           : none;
+	cursor           : pointer;
+	width            : 100%;
+	margin-bottom    : 10px;
+	opacity          : 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+	background-color : #bbb;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+	opacity : 1;
+}
+
+/*body {*/
+/*	background-color : #f1f1f1;*/
+/*}*/
+
+
+/*.nav2 {*/
+/*	color       : #782f40;*/
+/*	!*background-color : #d7d7d7;*!*/
+/*	padding-top : 5px;*/
+/*	height      : 34px;*/
+/*}*/
+
+/*.nav2 li {*/
+/*	!*background : ;*!*/
+/*	display : inline-block;*/
+/*	color   : #474747;*/
+/*	padding : 0px 8px;*/
+/*	!*border: 1px solid red;*!*/
+/*}*/
+/*.nav2 li:hover {*/
+/*	!*background : #ceb888;*!*/
+/*	color   : white;*/
+/*	padding : 0px 8px;*/
+/*}*/

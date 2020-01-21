@@ -1,0 +1,92 @@
+@import "https://fonts.googleapis.com/css?family=Raleway";
+* {
+	box-sizing : border-box;
+}
+
+body {
+	background-color : #f1f1f1;
+}
+
+#regForm {
+	background-color : #fff;
+	margin           : 100px auto;
+	/*font-family: Raleway;*/
+	padding          : 40px;
+	width            : 66%;
+	min-width        : 200px;
+}
+
+h1 {
+	text-align : center;
+}
+
+label {
+	padding-top : 15px;
+}
+
+input {
+	padding   : 10px;
+	width     : 100%;
+	font-size : 17px;
+	/*font-family: Raleway;*/
+	border    : 1px solid #ccc;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+	background-color : #fdd;
+}
+
+/* Hide all steps by default: */
+.tab {
+	display : none;
+}
+
+button {
+	background-color : #ddd;
+	color            : #fff;
+	border           : none;
+	padding          : 5px 10px 5px 3px;
+	font-size        : 14px;
+	/*font-family: Raleway;*/
+	cursor           : pointer;
+}
+
+button:hover {
+	opacity : 0.8;
+}
+
+#prevBtn {
+	background-color : #bbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+	height           : 15px;
+	width            : 15px;
+	margin           : 0 2px;
+	background-color : #bbb;
+	border           : none;
+	border-radius    : 50%;
+	display          : inline-block;
+	opacity          : 0.5;
+}
+
+.step.active {
+	opacity : 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+	background-color : #4caf50;
+}
+
+.cell-title {
+	padding   : 10px 0 0 3px;
+	font-size : 15px;
+	color     : #333;
+}
+
+p input {
+	font-size : 14px;
+}

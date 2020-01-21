@@ -137,7 +137,7 @@ error_reporting(E_ALL);
         </div>
 
 
-        <a href="<?php echo $p ?>/z_archive/datasets_files.php">
+        <a href="<?php echo $p ?>/datasets_files.php">
             Files
         </a>
         <!--        <a href="--><?php //echo $p ?><!--/documents.php"> Documents </a>-->

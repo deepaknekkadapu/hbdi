@@ -108,7 +108,7 @@ error_reporting(E_ALL);
 
         ?>
 
-        <a href="<?php echo $p ?>/z_archive/dashboard.php">
+        <a href="<?php echo $p ?>/dashboard.php">
             Dashboard
         </a>
 
@@ -252,6 +252,8 @@ if (isset($_POST['submitLogIn'])) {
         echo "Email address incorrect.";
         error_log("Email address incorrect.", 0);
         echo '<meta http-equiv=REFRESH CONTENT=5;url=https://tychen.us/hbdi/index.php>';
+        $path = $_SERVER['DOCUMENT_ROOT'];
+        error_log("$path", 0);
     } elseif ($isValid) {
         error_log("password is a Match", 0);
         $_SESSION['email_hbdi'] = $result['email'];

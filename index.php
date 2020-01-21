@@ -1,7 +1,7 @@
 
 <?php
 //error_log("test", 0);
-include("./includes/topnav.php");
+// include("./includes/topnav.php");
 //ini_set("error_log", "~/php_errors.log");
 ?>
 

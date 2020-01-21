@@ -109,10 +109,14 @@ error_reporting(E_ALL);
         ?>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         <a href="<?php echo $p ?>/dashboard.php">
 =======
         <a href="<?php echo $p ?>/z_archive/dashboard.php">
 >>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
+=======
+        <a href="<?php echo $p ?>/dashboard.php">
+>>>>>>> 6821422a81d0aac5ee5902edcce3680ce82c5d86
             Dashboard
         </a>
 
@@ -260,6 +264,8 @@ if (isset($_POST['submitLogIn'])) {
         echo "Email address incorrect.";
         error_log("Email address incorrect.", 0);
         echo '<meta http-equiv=REFRESH CONTENT=5;url=https://tychen.us/hbdi/index.php>';
+        $path = $_SERVER['DOCUMENT_ROOT'];
+        error_log("$path", 0);
     } elseif ($isValid) {
         error_log("password is a Match", 0);
         $_SESSION['email_hbdi'] = $result['email'];

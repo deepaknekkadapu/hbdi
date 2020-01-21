@@ -55,13 +55,12 @@ if ((!isset($root)) && (isset($_SESSION['document_root']))) {
     <!-- Navigation Menu to the right -->
     <div class="nav-hbdi-right" style="margin-right: 20px">
 
-        <!-- search Box-->
+        <!-- ##### search Box ##### -->
         <!--        <div class="dropdown-hbdi" style="margin: 5px 50px 0 15px; padding: 5px 0 0 0 ; height: 40px">-->
         <!--            <input-->
         <!--                    style="border-radius: 3px; height: 29px; width: 275px; color: darkgray"-->
         <!--                    type="text" placeholder="Search bar" aria-label="Search">-->
         <!--        </div>-->
-
         <div class="dropdown-hbdi" style="margin: 2px 0 3px 0 ;padding: 3px 0 0 10px ; height: 40px">
             <input class="search"
                    style="border-radius: 3px; height: 35px; width: 275px; color: darkgray; padding-left: 3px; outline: 0"
@@ -85,7 +84,7 @@ if ((!isset($root)) && (isset($_SESSION['document_root']))) {
             <div class="nav-hbdi-item" style="margin: 0 0 0 0">
                 <button type="button" class="btn btn-info btn-lg" data-toggle='modal' data-target="#loginModal"
                         style="border:1px solid white; margin: 5px 25px 2px 10px; padding: 2px 38px 0 38px; border-radius: 3px;
-                    font-size: .9em; font-weight: bold; background-color: transparent">log in
+                    font-size: .9em; font-weight: bold; background-color: transparent">LOG IN
                 </button>
 
             </div>
@@ -115,90 +114,91 @@ if ((!isset($root)) && (isset($_SESSION['document_root']))) {
         ?>
 
 
-        <a href="<?php echo $p ?>/dashboard.php">
-            <a href="<?php echo $p ?>/z_archive/dashboard.php">
-                <a href="<?php echo $p ?>/dashboard.php">
-                    Dashboard
-                </a>
-
-                <div class="dropdown-hbdi">
+        <div class="dropdown-hbdi">
+            <a href="<?php echo $p;
+                error_log("\$p: $p", 0);
+            ?>/dashboard.php">
+                Dashboard
+            </a>
+        </div>
+        <div class="dropdown-hbdi">
                 <span class="dropbtn-hbdi">
                 <a href="#"> Projects
                 <i class="fa fa-caret-down "></i>
                 </a>
                 </span>
-                    <div class="dropdown-hbdi-content" style="z-index: 9999">
-                        <?php
-                        $stmt = $pdo->prepare("SELECT title_project, title_project_short FROM projects WHERE id_creator = '$uid_hbdi' ");
-                        $stmt->execute();
-                        $result = $stmt->fetchAll();
-                        foreach ($result as $row) {
-                            $title_project_short = $row['title_project_short'];
-                            $title_project = $row['title_project'];
-                            ?>
-                            <a href="<?php echo $p ?>/projects/<?php echo $username_hbdi . "/" . $title_project_short ?>.php">
-                                <?php echo $title_project_short; ?>
-                            </a>
-                            <?php
-                        }
-                        ?>
-                    </div>
-                </div>
+            <div class="dropdown-hbdi-content" style="z-index: 9999">
+                <?php
+                $stmt = $pdo->prepare("SELECT title_project, title_project_short FROM projects WHERE id_creator = '$uid_hbdi' ");
+                $stmt->execute();
+                $result = $stmt->fetchAll();
+                foreach ($result as $row) {
+                    $title_project_short = $row['title_project_short'];
+                    $title_project = $row['title_project'];
+                    ?>
+                    <a href="<?php echo $p ?>/projects/<?php echo $username_hbdi . "/" . $title_project_short ?>.php">
+                        <?php echo $title_project_short; ?>
+                    </a>
+                    <?php
+                }
+                ?>
+            </div>
+        </div>
 
 
+        <a href="<?php echo $p ?>/datasets_files.php">
+            <a href="<?php echo $p ?>/datasets_files.php">
                 <a href="<?php echo $p ?>/datasets_files.php">
-                    <a href="<?php echo $p ?>/datasets_files.php">
-                        <a href="<?php echo $p ?>/datasets_files.php">
-                            Files
-                        </a>
-                        <!--        <a href="--><?php //echo $p ?><!--/documents.php"> Documents </a>-->
-                        <a href="<?php echo $p ?>/tasks.php"> Tasks </a>
+                    Files
+                </a>
+                <!--        <a href="--><?php //echo $p ?><!--/documents.php"> Documents </a>-->
+                <a href="<?php echo $p ?>/tasks.php"> Tasks </a>
 
-                        <div class="dropdown-hbdi">
+                <div class="dropdown-hbdi">
                 <span class="dropbtn-hbdi">
                 <a href="#"> Resources
                 <i class="fa fa-caret-down "></i>
                 </a>
                 </span>
-                            <div class="dropdown-hbdi-content" style="z-index: 9999">
-                                <a target='_blank'
-                                   href="https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/slurm-job-script-generator">Slurm</a>
+                    <div class="dropdown-hbdi-content" style="z-index: 9999">
+                        <a target='_blank'
+                           href="https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/slurm-job-script-generator">Slurm</a>
+                    </div>
+                </div>
+                <div class="dropdown-hbdi">
+                    <?php
+                    if (isset($email_hbdi) && isset($uid_hbdi)) {
+                        $name_first = $pdo->query("SELECT name_first FROM user WHERE email = '$email_hbdi'")->fetch();
+                        $name_first = $name_first['name_first'];
+                        ?>
+
+                        <!--                <div class="dropdown-hbdi" style="margin: 0 0 0 25px; vertical-align: bottom; border: 1px solid gold">-->
+
+
+                        <div class="dropdown-hbdi" style="margin: 0 75px 0 0">
+
+
+                            <a href="">
+                                <i class="fas fa-user-circle"></i>
+                                <?php echo "$name_first"; ?>
+                                <i class="fa fa-caret-down"></i>
+                            </a>
+                            <div class="dropdown-hbdi-content">
+                                <a href="#"> My Profile </a>
+                                <a href="<?php echo $p ?>/user/pw_reset.php"> Reset password</a>
+                                <a href="<?php echo $p ?>/user/logout.php"> Logout </a>
                             </div>
                         </div>
-                        <div class="dropdown-hbdi">
-                            <?php
-                            if (isset($email_hbdi) && isset($uid_hbdi)) {
-                                $name_first = $pdo->query("SELECT name_first FROM user WHERE email = '$email_hbdi'")->fetch();
-                                $name_first = $name_first['name_first'];
-                                ?>
+                    <?php } else { ?>
 
-                                <!--                <div class="dropdown-hbdi" style="margin: 0 0 0 25px; vertical-align: bottom; border: 1px solid gold">-->
-
-
-                                <div class="dropdown-hbdi" style="margin: 0 75px 0 0">
-
-
-                                    <a href="">
-                                        <i class="fas fa-user-circle"></i>
-                                        <?php echo "$name_first"; ?>
-                                        <i class="fa fa-caret-down"></i>
-                                    </a>
-                                    <div class="dropdown-hbdi-content">
-                                        <a href="#"> My Profile </a>
-                                        <a href="<?php echo $p ?>/user/pw_reset.php"> Reset password</a>
-                                        <a href="<?php echo $p ?>/user/logout.php"> Logout </a>
-                                    </div>
-                                </div>
-                            <?php } else { ?>
-
-                                <?php
-                            }
-                            }
-                            ?>
-                        </div>
+                        <?php
+                    }
+                    }
+                    ?>
+                </div>
 
     </div>
-    <!-- end of bav-hbdi-right -->
+    <!-- end of vav-hbdi-right -->
 </div>
 <!-- End of Navigation Bar -->
 

@@ -54,6 +54,7 @@ button:hover { opacity: 0.8;}
 #prevBtn { background-color: #BBBBBB; width: 70px; margin: 15px 1px; padding: 7px 1px; border-radius: 3px;}
 #nextBtn { background: darkgrey; margin: 15px 1px; padding: 7px 1px; border-radius: 3px; width: 70px;}
 .php-message {
+<<<<<<< HEAD
     /*width: 280px;*/
     /*margin: auto;*/
     /*position: relative; */
@@ -61,6 +62,15 @@ button:hover { opacity: 0.8;}
     /*left: 45px;*/
     /*display: flex;*/
     text-align: right
+=======
+    width: 200px;
+    /*margin: auto;*/
+    position: fixed;
+    top: 75px;
+    right: 5px;
+    /*display: flex;*/
+    text-align: right;
+>>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
 }
 .message-blink {
     width: 250px;

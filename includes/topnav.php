@@ -108,7 +108,11 @@ error_reporting(E_ALL);
 
         ?>
 
+<<<<<<< HEAD
         <a href="<?php echo $p ?>/dashboard.php">
+=======
+        <a href="<?php echo $p ?>/z_archive/dashboard.php">
+>>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
             Dashboard
         </a>
 
@@ -137,7 +141,11 @@ error_reporting(E_ALL);
         </div>
 
 
+<<<<<<< HEAD
         <a href="<?php echo $p ?>/datasets_files.php">
+=======
+        <a href="<?php echo $p ?>/z_archive/datasets_files.php">
+>>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
             Files
         </a>
         <!--        <a href="--><?php //echo $p ?><!--/documents.php"> Documents </a>-->
@@ -260,7 +268,11 @@ if (isset($_POST['submitLogIn'])) {
         error_log("Sessions saved.");
 
         unset($_POST['submitLogIn']);
+<<<<<<< HEAD
         echo "<meta http-equiv=REFRESH CONTENT=3;url=https://tychen.us/hbdi/index.php>";
+=======
+        echo "<meta http-equiv=REFRESH CONTENT=0;url=https://tychen.us/hbdi/index.php>";
+>>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
     } else {
         echo " Password incorrect. ";
         error_log('password ERR', 0);

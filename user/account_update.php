@@ -91,7 +91,11 @@
                            value="Submit">
 
                     </button>
+<<<<<<< HEAD
                     <a href=<?php echo $p ?>/dashboard.php
+=======
+                    <a href=<?php
+>>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
                        style="text-decoration: none">
                            <span style="float:right; margin-top: 10px; border: 1px solid grey;
 border-radius: 4px; height: 40px; width: 65px; padding: 8px 10px">

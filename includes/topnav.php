@@ -39,23 +39,22 @@ error_reporting(E_ALL);
 
 
     <!-- Navigation Menu to the right -->
-    <div class="nav-hbdi-right" style="margin-right: 20px">
+    <div class="nav-hbdi-right">
 
         <!-- ##### search Box ##### -->
-        <!--        <div class="dropdown-hbdi" style="margin: 5px 50px 0 15px; padding: 5px 0 0 0 ; height: 40px">-->
-        <!--            <input-->
-        <!--                    style="border-radius: 3px; height: 29px; width: 275px; color: darkgray"-->
-        <!--                    type="text" placeholder="Search bar" aria-label="Search">-->
-        <!--        </div>-->
-        <div class="dropdown-hbdi" style="margin: 2px 0 3px 0 ;padding: 3px 0 0 10px ; height: 40px">
-            <input class="search"
-                   style="border-radius: 3px; height: 35px; width: 200px; color: darkgray; padding-left: 10px; outline: 0"
-                   type="text" placeholder="Search HBDI..." aria-label="Search">
-            <i class="fas fa-search" style="padding: 5px 5px 0 3px"> </i>
+        <div class="nav-hbdi-item" style=" margin: 5px 2px 0 0; height: 33px; ">
+            <form action="">
+                <input type="text" placeholder="Quick search.." style="height: 33px; border-bottom-left-radius: 3px;
+                border-top-left-radius: 3px; border: 0; padding-left: 5px">
+                <button type="submit" style="background-color: white; height: 33px; width: 21px;
+                border-bottom-right-radius: 3px">
+                    <i class="fa fa-search" style="color: #782F40"></i>
+                </button>
+            </form>
         </div>
-        <div class="nav-hbdi-item" style="margin: 0 0 0 0">
+        <div class="nav-hbdi-item">
             <button type='button' class="btn" data-toggle='modal' data-target='#advSearchModal'
-                    style="border:1px solid white; margin: 5px 5px 2px 15px; padding: 2px 10px 0 10px; border-radius: 3px;
+                    style="border:1px solid white; margin: 5px 10px 2px 3px; padding: 5px 10px 0 10px; border-radius: 3px;
                     font-size: .9em; font-weight: bold; background-color: #8a6d3b; color: white">Advanced Search
             </button>
         </div>
@@ -67,28 +66,29 @@ error_reporting(E_ALL);
             <!--            <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#loginModal'> User</button>-->
             <div class="nav-hbdi-item" style="margin: 0 0 0 0">
                 <button type='button' class="btn" data-toggle='modal' data-target='#signupModal'
-                        style="border:1px solid white; margin: 5px 5px 2px 15px; padding: 2px 20px 0 20px; border-radius: 3px;
-                    font-size: .9em; font-weight: bold; background-color: transparent; color: white">JOIN
+                        style="border:1px solid white; margin: 5px 3px 2px 20px; padding: 2px 15px 0 15px; border-radius: 3px;
+                    font-size: .9em; font-weight: bold; background-color: transparent; color: white">Sign up
                 </button>
             </div>
 
             <div class="nav-hbdi-item" style="margin: 0 0 0 0">
                 <button type="button" class="btn btn-info btn-lg" data-toggle='modal' data-target="#loginModal"
-                        style="border:1px solid white; margin: 5px 5px 2px 5px; padding: 2px 15px 0 15px; border-radius: 3px;
+                        style="border:1px solid white; margin: 5px 5px 2px 3px; padding: 2px 15px 0 15px; border-radius: 3px;
                     font-size: .9em; font-weight: bold; background-color: transparent">LOG IN
                 </button>
 
             </div>
 
-            <div class="dropdown-hbdi" style="margin: 0 55px 0 0">
+            <div class="dropdown-hbdi" style="margin: 0 5px 0 0">
                 <a href="">
                     <i class="fas fa-user-circle"></i>
                     <i class="fa fa-caret-down"></i>
                 </a>
-                <div class="dropdown-hbdi-content" style="z-index: 9999">
+                <div class="dropdown-hbdi-content">
                     <a>
-                        <button type="button" data-toggle="modal" data-target="#loginModal" style="background-color: transparent;
-">Log in
+                        <button type="button" data-toggle="modal" data-target="#loginModal"
+                                style="background-color: transparent;">
+                            Log in
                         </button>
                     </a>
                     <a>Sign up</a>
@@ -105,10 +105,8 @@ error_reporting(E_ALL);
         ?>
 
 
-        <div class="dropdown-hbdi">
-            <a href="<?php echo $p;
-                error_log("\$p: $p", 0);
-            ?>/dashboard.php">
+        <div class="nav-hbdi-item">
+            <a href="<?php echo $p; ?>/dashboard.php">
                 Dashboard
             </a>
         </div>
@@ -118,7 +116,7 @@ error_reporting(E_ALL);
                 <i class="fa fa-caret-down "></i>
                 </a>
                 </span>
-            <div class="dropdown-hbdi-content" style="z-index: 9999">
+            <div class="dropdown-hbdi-content">
                 <?php
                 $stmt = $pdo->prepare("SELECT title_project, title_project_short FROM projects WHERE id_creator = '$uid_hbdi' ");
                 $stmt->execute();
@@ -162,13 +160,7 @@ error_reporting(E_ALL);
                         $name_first = $pdo->query("SELECT name_first FROM user WHERE email = '$email_hbdi'")->fetch();
                         $name_first = $name_first['name_first'];
                         ?>
-
-                        <!--                <div class="dropdown-hbdi" style="margin: 0 0 0 25px; vertical-align: bottom; border: 1px solid gold">-->
-
-
-                        <div class="dropdown-hbdi" style="margin: 0 75px 0 0">
-
-
+                        <div class="dropdown-hbdi">
                             <a href="">
                                 <i class="fas fa-user-circle"></i>
                                 <?php echo "$name_first"; ?>
@@ -525,12 +517,6 @@ Confirmation email sent. Redirecting...
 ?>
 <!-- ##### END of SIgn up Processing ##### -->
 
-
-<?php
-//if (isset($_SESSION['email_hbdi'])) {
-//    echo "You are already signed in as" . $_SESSION['username'] . ".";
-//    die ('<meta http-equiv=REFRESH CONTENT=5;url=../dashboard.php>');
-//} else { ?>
 
 
 <script type="text/javascript">

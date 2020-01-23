@@ -5,24 +5,10 @@ if ((!isset($root)) && (isset($_SESSION['document_root']))) {
     error_log("$root set,", 0);
 }
 
-//ini_set('display_errors', 1});
-//ini_set('display_startup_errors', 1);
-//error_reporting(E_ALL);
-
-//////// log user out after 15 minutes /////////////
-//if (isset($_SESSION['timestamp'])) {
-//    if (time() - $_SESSION['timestamp'] > 900) { //subtract new timestamp from the old one
-//        echo "<script>alert('You have been inactive for 15 Minutes! Redirecting...');</script>";
-//        unset($_SESSION['username_hbdi'], $_SESSION['email_hbdi'], $_SESSION['uid_hbdi'], $_SESSION['timestamp']);
-////    $_SESSION['logged_in'] = false;
-//        echo "<meta http-equiv=REFRESH CONTENT=5;url=http://tychen.us/hbdi/index.php>";
-//        exit;
-//    } else {
-//        $_SESSION['timestamp'] = time(); //set new timestamp
-//    }
-//}
-/////// end of log user out after 15 mintues ///////
-
+// ##### show PHP error messages #####
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ?>
 
 
@@ -63,11 +49,16 @@ if ((!isset($root)) && (isset($_SESSION['document_root']))) {
         <!--        </div>-->
         <div class="dropdown-hbdi" style="margin: 2px 0 3px 0 ;padding: 3px 0 0 10px ; height: 40px">
             <input class="search"
-                   style="border-radius: 3px; height: 35px; width: 275px; color: darkgray; padding-left: 3px; outline: 0"
+                   style="border-radius: 3px; height: 35px; width: 200px; color: darkgray; padding-left: 10px; outline: 0"
                    type="text" placeholder="Search HBDI..." aria-label="Search">
             <i class="fas fa-search" style="padding: 5px 5px 0 3px"> </i>
         </div>
-
+        <div class="nav-hbdi-item" style="margin: 0 0 0 0">
+            <button type='button' class="btn" data-toggle='modal' data-target='#advSearchModal'
+                    style="border:1px solid white; margin: 5px 5px 2px 15px; padding: 2px 10px 0 10px; border-radius: 3px;
+                    font-size: .9em; font-weight: bold; background-color: #8a6d3b; color: white">Advanced Search
+            </button>
+        </div>
 
         <?php
         if (!isset($_SESSION['email_hbdi'])) {
@@ -76,14 +67,14 @@ if ((!isset($root)) && (isset($_SESSION['document_root']))) {
             <!--            <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#loginModal'> User</button>-->
             <div class="nav-hbdi-item" style="margin: 0 0 0 0">
                 <button type='button' class="btn" data-toggle='modal' data-target='#signupModal'
-                        style="border:1px solid white; margin: 5px 10px 2px 45px; padding: 2px 38px 0 38px; border-radius: 3px;
-                    font-size: .9em; font-weight: bold; background-color: transparent; color: white">SIGN UP
+                        style="border:1px solid white; margin: 5px 5px 2px 15px; padding: 2px 20px 0 20px; border-radius: 3px;
+                    font-size: .9em; font-weight: bold; background-color: transparent; color: white">JOIN
                 </button>
             </div>
 
             <div class="nav-hbdi-item" style="margin: 0 0 0 0">
                 <button type="button" class="btn btn-info btn-lg" data-toggle='modal' data-target="#loginModal"
-                        style="border:1px solid white; margin: 5px 25px 2px 10px; padding: 2px 38px 0 38px; border-radius: 3px;
+                        style="border:1px solid white; margin: 5px 5px 2px 5px; padding: 2px 15px 0 15px; border-radius: 3px;
                     font-size: .9em; font-weight: bold; background-color: transparent">LOG IN
                 </button>
 

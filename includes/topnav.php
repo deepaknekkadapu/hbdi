@@ -1,5 +1,5 @@
 <?php
-include('headers.php');
+include_once('headers.php');
 if ((!isset($root)) && (isset($_SESSION['document_root']))) {
     $root = $_SESSION['document_root'];
     error_log("$root set,", 0);

@@ -3,7 +3,16 @@ if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
 include('db_conn.php');
-include('path.php');
+
+$server_name = $_SERVER['SERVER_NAME'];
+if ($server_name == 'tychen.us'){
+    $path = 'tychen.us/hbdi';
+    $p = 'https://tychen.us/hbdi';
+} else {
+    $path = 'localhost';
+    $p = 'http://192.168.60.107';
+}
+
 ?>
 
 

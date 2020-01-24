@@ -1,9 +1,9 @@
 <?php
 include_once('headers.php');
-if ((!isset($root)) && (isset($_SESSION['document_root']))) {
-    $root = $_SESSION['document_root'];
-    error_log("$root set,", 0);
-}
+//if ((!isset($root)) && (isset($_SESSION['document_root']))) {
+//    $root = $_SESSION['document_root'];
+//    error_log("$root set,", 0);
+//}
 
 // ##### show PHP error messages #####
 ini_set('display_errors', 1);
@@ -247,7 +247,7 @@ if (isset($_POST['submitLogIn'])) {
         echo "Email address incorrect.";
         error_log("Email address incorrect.", 0);
 
-        echo "<meta http-equiv=REFRESH CONTENT=5;url=$root/hbdi/index.php>";
+        echo "<meta http-equiv=REFRESH CONTENT=15;url=$p/index.php>";
     } elseif ($isValid) {
         error_log("password is a Match", 0);
         $_SESSION['email_hbdi'] = $result['email'];
@@ -396,7 +396,7 @@ if (isset($_POST['submitSignUp'])) {  //  working.
     error_log("POSTed", 0);
     $name_first = $name_last = $username = $email = $password1 = $password2 = $affiliation = "";
 
-    function test_input($data) // needs to show before called
+    function test_input($data) // needed before called
     {
         $data = trim($data);
         $data = stripslashes($data);
@@ -404,8 +404,6 @@ if (isset($_POST['submitSignUp'])) {  //  working.
         return $data;
     }
 
-//    echo $_POST['name_first'];
-//    echo $_POST['name_last'];
     $name_first = test_input($_POST['name_first']);
     $name_last = test_input($_POST['name_last']);
     $username = test_input($_POST['username']);
@@ -414,33 +412,34 @@ if (isset($_POST['submitSignUp'])) {  //  working.
     $pwd2 = $_POST["password2"];
     $affiliation = test_input($_POST['affiliation']);
 
-//    echo "check3 <br>";
 // https://www.w3schools.com/php/php_form_required.asp
 
     if (!preg_match("/^[\w-.]+$/", $name_first)) {
         echo "<div class='php-message'> Only letters are allowed in First Name. </div><br>";
-        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
+//        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
     } elseif (!preg_match("/^[\w-.]+$/", $name_last)) {
         echo "<div class='php-message'> Only letters are allowed in Last Name. </div><br>";
-        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
+//        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
     } elseif (!preg_match("/^[\w-.]+$/", $username)) {
         echo "<div class='php-message'> Only letters and numbers are allowed in User Name. </div><br>";
-        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
+//        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "<div class='php-message'> Email ($email) format incorrect. </div><br>";
-        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
+//        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
     } elseif (!preg_match("/^[\w-.]+$/", $affiliation)) {
         echo "<div class='php-message'> Affiliation: Please use only alphanumerical characters ($affiliation). </div><br>";
-        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
+//        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
 //            exit("Redirecting you back to the sign-up page...");
         error_log("There's an error with your input. ", 0);
         exit();
     } else {
 
+        // ### password hash
         $pass_hash = password_hash($pwd1, PASSWORD_DEFAULT);
-//        generate a toekn
-        $token = substr("abcdefghijklmnopqrstuvwxyz", mt_rand(0, 25), 1) . substr(md5(time()), 1);
+        // ### generate verification token
+        $account_verify_token = substr("abcdefghijklmnopqrstuvwxyz", mt_rand(0, 25), 1) . substr(md5(time()), 1);
 
+        // ### check email availability
         $result = $pdo->query("SELECT email FROM user WHERE email = '$email' ")->fetch();
         $email_db = $result['email'];
         if (!empty($email_db)) {
@@ -448,67 +447,69 @@ if (isset($_POST['submitSignUp'])) {  //  working.
             echo "<div class='php-message'>
                         Email taken. Redirecting...
                         </div>;
-                <meta http-equiv=REFRESH CONTENT=5;url=$root/hbdi/index.php>";
+                <meta http-equiv=REFRESH CONTENT=15;url=$p/index.php>";
             exit();
         } else {
-//                try {
-            $sql = "INSERT INTO user (email, password, username, name_first, name_last, affiliation, account_verify_token ) VALUES (?, ?, ?, ?, ?, ?, ?)";
-            $stmt = $pdo->prepare($sql);
-            $stmt->execute([$email, $pass_hash, $username, $name_first, $name_last, $affiliation, $token]);
 
-/// send email with token link
-//                $link = "<a href='$root/user/signup_verify.php?key=" . $email . "&verify=" . $token . "'> Click to confirm account creation</a>";
-/// http://talkerscode.com/webtricks/password-reset-system-using-php.php
-//                    try {
-// the headers: https://stackoverflow.com/questions/28026932/php-warning-mail-sendmail-from-not-set-in-php-ini-or-custom-from-head
-//                $headers = 'MIME-Version: 1.0' . "\r\n";
-//                $headers .= 'From: admin@hbdi<admin@hbdi.fsu.edu>' . "\r\n";
-//                $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+            // ### insert user account information
+            try {
+                $sql = "INSERT INTO user (email, password, username, name_first, name_last, affiliation, account_verify_token ) VALUES (?, ?, ?, ?, ?, ?, ?)";
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([$email, $pass_hash, $username, $name_first, $name_last, $affiliation, $account_verify_token]);
 
-// the message
-//                $msg = "
-//DO NOT reply to this email. Contact the website administrator for support or questions. <br><br>
-//Please click on the link to verify your new account: $link. <br>
-//
-//If the link is not working for you, please copy and paste the URL below
-//and paste to the address bar of your browser and hit enter to reset your password:<br>
-//http://tychen.us/hbdi/user/account_verify.php?key=$email&reset=$token
-//";
+                // ##### send email with token link #####
+                $link = "<a href='$p/user/signup_verify.php?key=" . $email . "&verify=" . $account_verify_token . "'> Click to confirm account creation</a>";
+                // ### http://talkerscode.com/webtricks/password-reset-system-using-php.php
+                try {
+                    // ### the headers: https://stackoverflow.com/questions/28026932/php-warning-mail-sendmail-from-not-set-in-php-ini-or-custom-from-head
+                    $headers = 'MIME-Version: 1.0' . "\r\n";
+                    $headers .= 'From: admin@hbdi<admin@hbdi.fsu.edu>' . "\r\n";
+                    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-// use wordwrap() if lines are longer than 70 characters
-//                $msg = wordwrap($msg, 70);
-// send email
-//                mail("$email", "HBDI: Confirm Account Creation", "$msg", "$headers");
-// message user
-//                echo "
-//<div class='php-message'>
-//<span>
-//Confirmation email sent. Redirecting...
-//</span>
-//</div>
-//                ";
+// ### the message ###
+                    $msg = "
+DO NOT reply to this email. Contact the website administrator for support or questions. <br><br>
+Please click on the link to verify your new account: $link. <br>
+
+If the link is not working for you, please copy and paste the URL below
+and paste to the address bar of your browser and hit enter to reset your password:<br>
+http://tychen.us/hbdi/user/account_verify.php?key=$email&reset=$account_verify_token
+";
+
+// ### use wordwrap() if lines are longer than 70 characters
+                    $msg = wordwrap($msg, 70);
+// ### send email
+                    mail("$email", "HBDI: Confirm Account Creation", "$msg", "$headers");
+// ### message user
+                    echo "
+<div class='php-message'>
+<span>
+Confirmation email sent. Redirecting...
+</span>
+</div>
+                ";
 
 
-//        Go back to login
-//                echo " < meta http - equiv = REFRESH CONTENT = 10;url = $root / index . php > ";
-//            }
-//        catch
-//            (Exception $exception) {
-//                echo $exception;
-//            }
+// ### Go back to home
+                    echo "<meta http-equiv=REFRESH CONTENT=10;url=$p/index.php>";
+// ### send email exception
+                } catch
+                (Exception $emailException) {
+                    echo $emailException;
+                }
 
-            echo "<meta http-equiv=REFRESH CONTENT=0;url=$p/index.php>";
-            exit();
-
-//                } catch (PDOException $e) {
-//        echo "
-//<div class='php-message' >
-//                Account not created . <br >
-//                Please try signing up again . <br >
-//                The error message is as below: <br ></div > " .
-//            $e->getMessage();
-//        echo '<meta http-equiv=REFRESH CONTENT=15;url=signup.php>';
-//    }
+                echo "<meta http-equiv=REFRESH CONTENT=15;url=$p/index.php>";
+                error_log("the web path here is: $p", 0);
+                exit();
+// ### insert user account information exception
+            } catch (PDOException $e) {
+                echo "
+                        <div class='php-message' >
+                        Account not created . <br >
+                        Please try signing up again . <br >
+                        The error message is as below: <br ></div > " . $e->getMessage();
+                echo '<meta http-equiv=REFRESH CONTENT=15;url=signup.php>';
+            }
 //    }
 //        }
 //    } catch (Exception $e) {

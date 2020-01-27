@@ -135,7 +135,6 @@ error_reporting(E_ALL);
         </div>
 
 
-        <a href="<?php echo $p ?>/datasets_files.php">
             <a href="<?php echo $p ?>/datasets_files.php">
                 <a href="<?php echo $p ?>/datasets_files.php">
                     Files

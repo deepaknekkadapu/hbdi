@@ -14,7 +14,7 @@ $_SESSION['document_root'] = __DIR__;
     <!-- header-->
     <section
             style="position: relative; text-align: center; width: 100%; border: ">
-        <h2> Health Big Data Intiative </h2>
+        <h2> Health Big Data Intiative - HBDI</h2>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor. </h4>
     </section>

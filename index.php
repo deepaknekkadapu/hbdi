@@ -14,7 +14,7 @@ $_SESSION['document_root'] = __DIR__;
     <!-- header-->
     <section
             style="position: relative; text-align: center; width: 100%; border: ">
-        <h2> Health Big Data Intiative - HBDI</h2>
+        <h2> Health Big Data Intiative - HBDIe</h2>
         <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor. </h4>
     </section>
@@ -46,7 +46,7 @@ $_SESSION['document_root'] = __DIR__;
                         <i class="fas fa-project-diagram"></i>
                     </div>
                     <div class="feature-desc">
-                        <h3><a id="projects"></a> Reseach Projet Management </h3>
+                        <h3><a id="projects"></a> Reseach Project Management </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla molestie eros ut mollis. Praesent magna nisi, aliquam sit amet efficitur vel, mattis ut risus.
                         </p>
                     </div>

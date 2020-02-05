@@ -1,9 +1,5 @@
 <?php
 include_once('headers.php');
-//if ((!isset($root)) && (isset($_SESSION['document_root']))) {
-//    $root = $_SESSION['document_root'];
-//    error_log("$root set,", 0);
-//}
 
 // ##### show PHP error messages #####
 ini_set('display_errors', 1);
@@ -13,175 +9,174 @@ error_reporting(E_ALL);
 
 
 <!-- Begin of Navigation Bar -->
-<div class="nav-hbdi" xmlns="http://www.w3.org/1999/html">
+<!--<div class="nav-hbdi" xmlns="http://www.w3.org/1999/html">-->
+<nav class="navbar sticky-top navbar-expand-sm ">
 
-    <!--    Logo and Brand -->
-    <span>
-        <!-- logo -->
-        <span style="float: left; padding: 5px 5px 0 5px ">
-            <a href="<?php echo $p ?>/index.php"><img style="padding: 0; height: 30px; width: auto; margin-left: 25px"
-                                                      alt="HBDI logo"
-                                                      src="<?php echo $p ?>/images/favicon_io/apple-touch-icon.png">
-            </a>
-        </span>
+    <!-- ##### Logo and Brand ##### -->
+    <!-- logo -->
+    <!--        <span style="float: left; padding: 5px 5px 0 5px ">-->
+    <div class="navbar-brand">
+        <img class="d-inline-block align-top" src="<?php echo $p ?>/images/favicon_io/apple-touch-icon.png"
+             width="30" alt="HBDI logo">
+        <a href="<?php echo $p ?>/index.php">
+            HBDI
+        </a>
+        <a href="https://fsu.edu" target="_blank">
+            @FSU
+        </a>
+    </div>
 
-        <!-- brand -->
-        <span style="display: inline-block; font-size: 1.8em; font-weight: 600; padding: 4px 0 0 0">
-            <a style="display: inline-block; text-decoration: none; color: #FFFFFF;
-                padding: 0; margin: 0; border: gold;"
-               href="<?php echo $p ?>/index.php">HBDI</a><!--
-            --><a style="display: inline-block; text-decoration: none; color: #DDDDDD;
-                padding: 0; margin: 0; border: gold"
-                  href="https://fsu.edu" target="_blank">@FSU</a>
-        </span>
-    </span>
-    <!-- end of logo and brand -->
+    <!-- ##### Navigation Menu to the right ##### -->
+    <!--    <div class="nav-hbdi-right">-->
 
+    <div class="ml-auto">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <div class="navbar-nav">
 
-    <!-- Navigation Menu to the right -->
-    <div class="nav-hbdi-right">
-
-        <!-- ##### search Box ##### -->
-        <div class="nav-hbdi-item" style=" margin: 5px 2px 0 0; height: 33px; ">
-            <form action="">
-                <input type="text" placeholder="Quick search.." style="height: 33px; border-bottom-left-radius: 3px;
+                <!-- ##### search Box ##### -->
+                <div class="nav-item" style=" margin: 1px 2px 0 0; height: 33px; ">
+                    <form action="">
+                        <input type="text" placeholder="Quick search.." style="height: 33px; border-bottom-left-radius: 3px;
                 border-top-left-radius: 3px; border: 0; padding-left: 5px">
-                <button type="submit" style="background-color: white; height: 33px; width: 21px;
+                        <button type="submit" style="background-color: white; height: 33px; width: 21px;
                 border-bottom-right-radius: 3px">
-                    <i class="fa fa-search" style="color: #782F40"></i>
-                </button>
-            </form>
-        </div>
-        <div class="nav-hbdi-item">
-            <button type='button' class="btn" data-toggle='modal' data-target='#advSearchModal'
-                    style="border:1px solid white; margin: 5px 10px 2px 3px; padding: 5px 10px 0 10px; border-radius: 3px;
-                    font-size: .9em; font-weight: bold; background-color: #8a6d3b; color: white">Advanced Search
-            </button>
-        </div>
-
-        <?php
-        if (!isset($_SESSION['email_hbdi'])) {
-            ?>
-            <!--            -->
-            <!--            <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#loginModal'> User</button>-->
-            <div class="nav-hbdi-item" style="margin: 0 0 0 0">
-                <button type='button' class="btn" data-toggle='modal' data-target='#signupModal'
-                        style="border:1px solid white; margin: 5px 3px 2px 20px; padding: 2px 15px 0 15px; border-radius: 3px;
-                    font-size: .9em; font-weight: bold; background-color: transparent; color: white">Sign up
-                </button>
-            </div>
-
-            <div class="nav-hbdi-item" style="margin: 0 0 0 0">
-                <button type="button" class="btn btn-info btn-lg" data-toggle='modal' data-target="#loginModal"
-                        style="border:1px solid white; margin: 5px 5px 2px 3px; padding: 2px 15px 0 15px; border-radius: 3px;
-                    font-size: .9em; font-weight: bold; background-color: transparent">LOG IN
-                </button>
-
-            </div>
-
-            <div class="dropdown-hbdi" style="margin: 0 5px 0 0">
-                <a href="">
-                    <i class="fas fa-user-circle"></i>
-                    <i class="fa fa-caret-down"></i>
-                </a>
-                <div class="dropdown-hbdi-content">
-                    <a>
-                        <button type="button" data-toggle="modal" data-target="#loginModal"
-                                style="background-color: transparent;">
-                            Log in
+                            <i class="fa fa-search" style="color: #782F40"></i>
                         </button>
-                    </a>
-                    <a>Sign up</a>
-                    <a>Reset password</a>
+                    </form>
                 </div>
-            </div>
+                <!--               style="border:1px solid white; margin: 5px 10px 2px 3px; padding: 5px 10px 0 10px; border-radius: 3px;-->
+                <!--                    font-size: .9em; font-weight: bold; background-color: #8a6d3b; color: white"-->
+                <!--                <div class="nav-item nav-link" data-toggle='modal' data-target='#advSearchModal'>-->
+                <!--                    <a>Advanced Search</a>-->
+                <!--                </div>-->
 
-
-        <?php } else {
-        $email_hbdi = $_SESSION['email_hbdi'];
-        $username_hbdi = $_SESSION['username_hbdi'];
-        $uid_hbdi = $_SESSION['uid_hbdi'];
-
-        ?>
-
-
-        <div class="nav-hbdi-item">
-            <a href="<?php echo $p; ?>/dashboard.php">
-                Dashboard
-            </a>
-        </div>
-        <div class="dropdown-hbdi">
-                <span class="dropbtn-hbdi">
-                <a href="#"> Projects
-                <i class="fa fa-caret-down "></i>
-                </a>
-                </span>
-            <div class="dropdown-hbdi-content">
                 <?php
-                $stmt = $pdo->prepare("SELECT title_project, title_project_short FROM projects WHERE id_creator = '$uid_hbdi' ");
-                $stmt->execute();
-                $result = $stmt->fetchAll();
-                foreach ($result as $row) {
-                    $title_project_short = $row['title_project_short'];
-                    $title_project = $row['title_project'];
+                if (!isset($_SESSION['email_hbdi'])) {
                     ?>
-                    <a href="<?php echo $p ?>/projects/<?php echo $username_hbdi . "/" . $title_project_short ?>.php">
-                        <?php echo $title_project_short; ?>
+                    <!--            -->
+                    <!--            <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#loginModal'> User</button>-->
+                    <a class="nav-item nav-link" href=#>
+                        <!--                        style="border:1px solid white; margin: 5px 3px 2px 20px; padding: 2px 15px 0 15px; border-radius: 3px;-->
+                        <!--                    font-size: .9em; font-weight: bold; background-color: transparent; color: white"-->
+                        <div class="" data-toggle='modal' data-target='#signupModal'>
+                            SIGN UP
+                        </div>
                     </a>
-                    <?php
-                }
+
+                    <a class="nav-item nav-link" href="#">
+                        <!--                style="border:1px solid white; margin: 5px 5px 2px 3px; padding: 2px 15px 0 15px; border-radius: 3px;-->
+                        <!--                font-size: .9em; font-weight: bold; background-color: transparent"-->
+                        <div class="" data-toggle='modal' data-target="#loginModal">
+                            LOG IN
+                        </div>
+                    </a>
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href=""
+                           id="navbarDropdownMenuLink"
+                           role="button" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            <i class="fas fa-user-circle"></i>
+                            <!--                    <i class="fa fa-caret-down"></i>-->
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#loginModal"> Log in </a>
+                            <a class="dropdown-item" href="" data-toggle='modal' data-target='#signupModal'>Sign up</a>
+                            <a class="dropdown-item" href="">Reset password</a>
+                            <!--                    TODO: reset password module -->
+                        </div>
+                    </div>
+
+
+                <?php } else {
+                $email_hbdi = $_SESSION['email_hbdi'];
+                $username_hbdi = $_SESSION['username_hbdi'];
+                $uid_hbdi = $_SESSION['uid_hbdi'];
+
                 ?>
-            </div>
-        </div>
 
+                <a class="nav-item nav-link" href="<?php echo $p; ?>/dashboard.php">
+                    Dashboard
+                </a>
+                <div class="nav-item dropdown" href="">
+                    <a class="nav-link dropdown-toggle" href="<?php echo $pages ?>/research.php"
+                       id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <?php
+                        $stmt = $pdo->prepare("SELECT title_project, title_project_short FROM projects WHERE id_creator = '$uid_hbdi' ");
+                        $stmt->execute();
+                        $result = $stmt->fetchAll();
+                        foreach ($result as $row) {
+                            $title_project_short = $row['title_project_short'];
+                            $title_project = $row['title_project'];
+                            ?>
+                            <a class="dropdown-item"
+                               href="<?php echo $p ?>/projects/<?php echo $username_hbdi . "/" . $title_project_short ?>.php">
+                                <?php echo $title_project_short; ?>
+                            </a>
+                            <?php
+                        }
+                        ?>
+                    </div>
+                </div>
 
-            <a href="<?php echo $p ?>/datasets_files.php">
-                <a href="<?php echo $p ?>/datasets_files.php">
+                <a class="nav-item nav-link" href="<?php echo $p ?>/datasets_files.php">
                     Files
                 </a>
                 <!--        <a href="--><?php //echo $p ?><!--/documents.php"> Documents </a>-->
-                <a href="<?php echo $p ?>/tasks.php"> Tasks </a>
 
-                <div class="dropdown-hbdi">
-                <span class="dropbtn-hbdi">
-                <a href="#"> Resources
-                <i class="fa fa-caret-down "></i>
+                <a class="nav-item nav-link" href="<?php echo $p ?>/tasks.php">
+                    Tasks
                 </a>
-                </span>
-                    <div class="dropdown-hbdi-content" style="z-index: 9999">
-                        <a target='_blank'
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=""
+                       id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" target='_blank'
                            href="https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/slurm-job-script-generator">Slurm</a>
                     </div>
                 </div>
-                <div class="dropdown-hbdi">
-                    <?php
-                    if (isset($email_hbdi) && isset($uid_hbdi)) {
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=""
+                       id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        <?php
+                        if (isset($email_hbdi) && isset($uid_hbdi)) {
                         $name_first = $pdo->query("SELECT name_first FROM user WHERE email = '$email_hbdi'")->fetch();
                         $name_first = $name_first['name_first'];
+                        echo "$name_first";
                         ?>
-                        <div class="dropdown-hbdi">
-                            <a href="">
-                                <i class="fas fa-user-circle"></i>
-                                <?php echo "$name_first"; ?>
-                                <i class="fa fa-caret-down"></i>
-                            </a>
-                            <div class="dropdown-hbdi-content">
-                                <a href="#"> My Profile </a>
-                                <a href="<?php echo $p ?>/user/pw_reset.php"> Reset password</a>
-                                <a href="<?php echo $p ?>/user/logout.php"> Logout </a>
-                            </div>
-                        </div>
-                    <?php } else { ?>
-
-                        <?php
-                    }
-                    }
-                    ?>
+                    </a>
+                    <!--                    <i class="fas fa-user-circle"></i>-->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!--                        TODO: profile page -->
+                        <a class="dropdown-item" href="#"> Profile </a>
+                        <a class="dropdown-item" href="<?php echo $p ?>/user/pw_reset.php"> Reset password</a>
+                        <a class="dropdown-item" href="<?php echo $p ?>/user/logout.php"> Logout </a>
+                    </div>
                 </div>
-
+            </div>
+            <?php
+            }
+            }
+            ?>
+        </div>
     </div>
+    </div>
+    </div>
+    <!--    end of ml-auto -->
     <!-- end of vav-hbdi-right -->
-</div>
+    <!--    </div>-->
+</nav>
 <!-- End of Navigation Bar -->
 
 <!-- Search Modal -->

@@ -1,205 +1,182 @@
 <?php
-include('headers.php');
-if ((!isset($root)) && (isset($_SESSION['document_root']))) {
-    $root = $_SESSION['document_root'];
-    error_log("$root set,", 0);
-}
+include_once('headers.php');
 
-//ini_set('display_errors', 1});
-//ini_set('display_startup_errors', 1);
-//error_reporting(E_ALL);
-
-//////// log user out after 15 minutes /////////////
-//if (isset($_SESSION['timestamp'])) {
-//    if (time() - $_SESSION['timestamp'] > 900) { //subtract new timestamp from the old one
-//        echo "<script>alert('You have been inactive for 15 Minutes! Redirecting...');</script>";
-//        unset($_SESSION['username_hbdi'], $_SESSION['email_hbdi'], $_SESSION['uid_hbdi'], $_SESSION['timestamp']);
-////    $_SESSION['logged_in'] = false;
-//        echo "<meta http-equiv=REFRESH CONTENT=5;url=http://tychen.us/hbdi/index.php>";
-//        exit;
-//    } else {
-//        $_SESSION['timestamp'] = time(); //set new timestamp
-//    }
-//}
-/////// end of log user out after 15 mintues ///////
-
+// ##### show PHP error messages #####
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 ?>
 
 
 <!-- Begin of Navigation Bar -->
-<div class="nav-hbdi" xmlns="http://www.w3.org/1999/html">
+<!--<div class="nav-hbdi" xmlns="http://www.w3.org/1999/html">-->
+<nav class="navbar sticky-top navbar-expand-sm ">
 
-    <!--    Logo and Brand -->
-    <span>
-        <!-- logo -->
-        <span style="float: left; padding: 5px 5px 0 5px ">
-            <a href="<?php echo $p ?>/index.php"><img style="padding: 0; height: 30px; width: auto; margin-left: 25px"
-                                                      alt="HBDI logo"
-                                                      src="<?php echo $p ?>/images/favicon_io/apple-touch-icon.png">
-            </a>
-        </span>
+    <!-- ##### Logo and Brand ##### -->
+    <!-- logo -->
+    <!--        <span style="float: left; padding: 5px 5px 0 5px ">-->
+    <div class="navbar-brand">
+        <img class="d-inline-block align-top" src="<?php echo $p ?>/images/favicon_io/apple-touch-icon.png"
+             width="30" alt="HBDI logo">
+        <a href="<?php echo $p ?>/index.php">
+            HBDI
+        </a>
+        <a href="https://fsu.edu" target="_blank">
+            @FSU
+        </a>
+    </div>
 
-        <!-- brand -->
-        <span style="display: inline-block; font-size: 1.8em; font-weight: 600; padding: 4px 0 0 0">
-            <a style="display: inline-block; text-decoration: none; color: #FFFFFF;
-                padding: 0; margin: 0; border: gold;"
-               href="<?php echo $p ?>/index.php">HBDI</a><!--
-            --><a style="display: inline-block; text-decoration: none; color: #DDDDDD;
-                padding: 0; margin: 0; border: gold"
-                  href="https://fsu.edu" target="_blank">@FSU</a>
-        </span>
-    </span>
-    <!-- end of logo and brand -->
+    <!-- ##### Navigation Menu to the right ##### -->
+    <!--    <div class="nav-hbdi-right">-->
 
+    <div class="ml-auto">
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <div class="navbar-nav">
 
-    <!-- Navigation Menu to the right -->
-    <div class="nav-hbdi-right" style="margin-right: 20px">
-
-        <!-- ##### search Box ##### -->
-        <!--        <div class="dropdown-hbdi" style="margin: 5px 50px 0 15px; padding: 5px 0 0 0 ; height: 40px">-->
-        <!--            <input-->
-        <!--                    style="border-radius: 3px; height: 29px; width: 275px; color: darkgray"-->
-        <!--                    type="text" placeholder="Search bar" aria-label="Search">-->
-        <!--        </div>-->
-        <div class="dropdown-hbdi" style="margin: 2px 0 3px 0 ;padding: 3px 0 0 10px ; height: 40px">
-            <input class="search"
-                   style="border-radius: 3px; height: 35px; width: 275px; color: darkgray; padding-left: 3px; outline: 0"
-                   type="text" placeholder="Search HBDI..." aria-label="Search">
-            <i class="fas fa-search" style="padding: 5px 5px 0 3px"> </i>
-        </div>
-
-
-        <?php
-        if (!isset($_SESSION['email_hbdi'])) {
-            ?>
-            <!--            -->
-            <!--            <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#loginModal'> User</button>-->
-            <div class="nav-hbdi-item" style="margin: 0 0 0 0">
-                <button type='button' class="btn" data-toggle='modal' data-target='#signupModal'
-                        style="border:1px solid white; margin: 5px 10px 2px 45px; padding: 2px 38px 0 38px; border-radius: 3px;
-                    font-size: .9em; font-weight: bold; background-color: transparent; color: white">SIGN UP
-                </button>
-            </div>
-
-            <div class="nav-hbdi-item" style="margin: 0 0 0 0">
-                <button type="button" class="btn btn-info btn-lg" data-toggle='modal' data-target="#loginModal"
-                        style="border:1px solid white; margin: 5px 25px 2px 10px; padding: 2px 38px 0 38px; border-radius: 3px;
-                    font-size: .9em; font-weight: bold; background-color: transparent">LOG IN
-                </button>
-
-            </div>
-
-            <div class="dropdown-hbdi" style="margin: 0 55px 0 0">
-                <a href="">
-                    <i class="fas fa-user-circle"></i>
-                    <i class="fa fa-caret-down"></i>
-                </a>
-                <div class="dropdown-hbdi-content" style="z-index: 9999">
-                    <a>
-                        <button type="button" data-toggle="modal" data-target="#loginModal" style="background-color: transparent;
-">Log in
+                <!-- ##### search Box ##### -->
+                <div class="nav-item" style=" margin: 1px 2px 0 0; height: 33px; ">
+                    <form action="">
+                        <input type="text" placeholder="Quick search.." style="height: 33px; border-bottom-left-radius: 3px;
+                border-top-left-radius: 3px; border: 0; padding-left: 5px">
+                        <button type="submit" style="background-color: white; height: 33px; width: 21px;
+                border-bottom-right-radius: 3px">
+                            <i class="fa fa-search" style="color: #782F40"></i>
                         </button>
-                    </a>
-                    <a>Sign up</a>
-                    <a>Reset password</a>
+                    </form>
                 </div>
-            </div>
+                <!--               style="border:1px solid white; margin: 5px 10px 2px 3px; padding: 5px 10px 0 10px; border-radius: 3px;-->
+                <!--                    font-size: .9em; font-weight: bold; background-color: #8a6d3b; color: white"-->
+                <!--                <div class="nav-item nav-link" data-toggle='modal' data-target='#advSearchModal'>-->
+                <!--                    <a>Advanced Search</a>-->
+                <!--                </div>-->
 
-
-        <?php } else {
-        $email_hbdi = $_SESSION['email_hbdi'];
-        $username_hbdi = $_SESSION['username_hbdi'];
-        $uid_hbdi = $_SESSION['uid_hbdi'];
-
-        ?>
-
-
-        <div class="dropdown-hbdi">
-            <a href="<?php echo $p;
-                error_log("\$p: $p", 0);
-            ?>/dashboard.php">
-                Dashboard
-            </a>
-        </div>
-        <div class="dropdown-hbdi">
-                <span class="dropbtn-hbdi">
-                <a href="#"> Projects
-                <i class="fa fa-caret-down "></i>
-                </a>
-                </span>
-            <div class="dropdown-hbdi-content" style="z-index: 9999">
                 <?php
-                $stmt = $pdo->prepare("SELECT title_project, title_project_short FROM projects WHERE id_creator = '$uid_hbdi' ");
-                $stmt->execute();
-                $result = $stmt->fetchAll();
-                foreach ($result as $row) {
-                    $title_project_short = $row['title_project_short'];
-                    $title_project = $row['title_project'];
+                if (!isset($_SESSION['email_hbdi'])) {
                     ?>
-                    <a href="<?php echo $p ?>/projects/<?php echo $username_hbdi . "/" . $title_project_short ?>.php">
-                        <?php echo $title_project_short; ?>
+                    <!--            -->
+                    <!--            <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#loginModal'> User</button>-->
+                    <a class="nav-item nav-link" href=#>
+                        <!--                        style="border:1px solid white; margin: 5px 3px 2px 20px; padding: 2px 15px 0 15px; border-radius: 3px;-->
+                        <!--                    font-size: .9em; font-weight: bold; background-color: transparent; color: white"-->
+                        <div class="" data-toggle='modal' data-target='#signupModal'>
+                            SIGN UP
+                        </div>
                     </a>
-                    <?php
-                }
+
+                    <a class="nav-item nav-link" href="#">
+                        <!--                style="border:1px solid white; margin: 5px 5px 2px 3px; padding: 2px 15px 0 15px; border-radius: 3px;-->
+                        <!--                font-size: .9em; font-weight: bold; background-color: transparent"-->
+                        <div class="" data-toggle='modal' data-target="#loginModal">
+                            LOG IN
+                        </div>
+                    </a>
+
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle"
+                           href=""
+                           id="navbarDropdownMenuLink"
+                           role="button" data-toggle="dropdown" aria-haspopup="true"
+                           aria-expanded="false">
+                            <i class="fas fa-user-circle"></i>
+                            <!--                    <i class="fa fa-caret-down"></i>-->
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" data-toggle="modal" data-target="#loginModal"> Log in </a>
+                            <a class="dropdown-item" href="" data-toggle='modal' data-target='#signupModal'>Sign up</a>
+                            <a class="dropdown-item" href="">Reset password</a>
+                            <!--                    TODO: reset password module -->
+                        </div>
+                    </div>
+
+
+                <?php } else {
+                $email_hbdi = $_SESSION['email_hbdi'];
+                $username_hbdi = $_SESSION['username_hbdi'];
+                $uid_hbdi = $_SESSION['uid_hbdi'];
+
                 ?>
-            </div>
-        </div>
 
+                <a class="nav-item nav-link" href="<?php echo $p; ?>/dashboard.php">
+                    Dashboard
+                </a>
+                <div class="nav-item dropdown" href="">
+                    <a class="nav-link dropdown-toggle" href="<?php echo $pages ?>/research.php"
+                       id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Projects
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <?php
+                        $stmt = $pdo->prepare("SELECT title_project, title_project_short FROM projects WHERE id_creator = '$uid_hbdi' ");
+                        $stmt->execute();
+                        $result = $stmt->fetchAll();
+                        foreach ($result as $row) {
+                            $title_project_short = $row['title_project_short'];
+                            $title_project = $row['title_project'];
+                            ?>
+                            <a class="dropdown-item"
+                               href="<?php echo $p ?>/projects/<?php echo $username_hbdi . "/" . $title_project_short ?>.php">
+                                <?php echo $title_project_short; ?>
+                            </a>
+                            <?php
+                        }
+                        ?>
+                    </div>
+                </div>
 
-        <a href="<?php echo $p ?>/datasets_files.php">
-            <a href="<?php echo $p ?>/datasets_files.php">
-                <a href="<?php echo $p ?>/datasets_files.php">
+                <a class="nav-item nav-link" href="<?php echo $p ?>/datasets_files.php">
                     Files
                 </a>
                 <!--        <a href="--><?php //echo $p ?><!--/documents.php"> Documents </a>-->
-                <a href="<?php echo $p ?>/tasks.php"> Tasks </a>
 
-                <div class="dropdown-hbdi">
-                <span class="dropbtn-hbdi">
-                <a href="#"> Resources
-                <i class="fa fa-caret-down "></i>
+                <a class="nav-item nav-link" href="<?php echo $p ?>/tasks.php">
+                    Tasks
                 </a>
-                </span>
-                    <div class="dropdown-hbdi-content" style="z-index: 9999">
-                        <a target='_blank'
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=""
+                       id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        Resources
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" target='_blank'
                            href="https://www.hpc.iastate.edu/guides/classroom-hpc-cluster/slurm-job-script-generator">Slurm</a>
                     </div>
                 </div>
-                <div class="dropdown-hbdi">
-                    <?php
-                    if (isset($email_hbdi) && isset($uid_hbdi)) {
+
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href=""
+                       id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">
+                        <?php
+                        if (isset($email_hbdi) && isset($uid_hbdi)) {
                         $name_first = $pdo->query("SELECT name_first FROM user WHERE email = '$email_hbdi'")->fetch();
                         $name_first = $name_first['name_first'];
+                        echo "$name_first";
                         ?>
-
-                        <!--                <div class="dropdown-hbdi" style="margin: 0 0 0 25px; vertical-align: bottom; border: 1px solid gold">-->
-
-
-                        <div class="dropdown-hbdi" style="margin: 0 75px 0 0">
-
-
-                            <a href="">
-                                <i class="fas fa-user-circle"></i>
-                                <?php echo "$name_first"; ?>
-                                <i class="fa fa-caret-down"></i>
-                            </a>
-                            <div class="dropdown-hbdi-content">
-                                <a href="#"> My Profile </a>
-                                <a href="<?php echo $p ?>/user/pw_reset.php"> Reset password</a>
-                                <a href="<?php echo $p ?>/user/logout.php"> Logout </a>
-                            </div>
-                        </div>
-                    <?php } else { ?>
-
-                        <?php
-                    }
-                    }
-                    ?>
+                    </a>
+                    <!--                    <i class="fas fa-user-circle"></i>-->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!--                        TODO: profile page -->
+                        <a class="dropdown-item" href="#"> Profile </a>
+                        <a class="dropdown-item" href="<?php echo $p ?>/user/pw_reset.php"> Reset password</a>
+                        <a class="dropdown-item" href="<?php echo $p ?>/user/logout.php"> Logout </a>
+                    </div>
                 </div>
-
+            </div>
+            <?php
+            }
+            }
+            ?>
+        </div>
     </div>
+    </div>
+    </div>
+    <!--    end of ml-auto -->
     <!-- end of vav-hbdi-right -->
-</div>
+    <!--    </div>-->
+</nav>
 <!-- End of Navigation Bar -->
 
 <!-- Search Modal -->
@@ -264,7 +241,7 @@ if (isset($_POST['submitLogIn'])) {
         echo "Email address incorrect.";
         error_log("Email address incorrect.", 0);
 
-        echo "<meta http-equiv=REFRESH CONTENT=5;url=$root/hbdi/index.php>";
+        echo "<meta http-equiv=REFRESH CONTENT=15;url=$p/index.php>";
     } elseif ($isValid) {
         error_log("password is a Match", 0);
         $_SESSION['email_hbdi'] = $result['email'];
@@ -413,7 +390,7 @@ if (isset($_POST['submitSignUp'])) {  //  working.
     error_log("POSTed", 0);
     $name_first = $name_last = $username = $email = $password1 = $password2 = $affiliation = "";
 
-    function test_input($data) // needs to show before called
+    function test_input($data) // needed before called
     {
         $data = trim($data);
         $data = stripslashes($data);
@@ -421,8 +398,6 @@ if (isset($_POST['submitSignUp'])) {  //  working.
         return $data;
     }
 
-//    echo $_POST['name_first'];
-//    echo $_POST['name_last'];
     $name_first = test_input($_POST['name_first']);
     $name_last = test_input($_POST['name_last']);
     $username = test_input($_POST['username']);
@@ -431,115 +406,114 @@ if (isset($_POST['submitSignUp'])) {  //  working.
     $pwd2 = $_POST["password2"];
     $affiliation = test_input($_POST['affiliation']);
 
-//    echo "check3 <br>";
 // https://www.w3schools.com/php/php_form_required.asp
-    try {
-        if (!preg_match("/^[\w-.]+$/", $name_first)) {
-            echo "<div class='php-message'> Only letters are allowed in First Name. </div><br>";
-            echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
-        } elseif (!preg_match("/^[\w-.]+$/", $name_last)) {
-            echo "<div class='php-message'> Only letters are allowed in Last Name. </div><br>";
-            echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
-        } elseif (!preg_match("/^[\w-.]+$/", $username)) {
-            echo "<div class='php-message'> Only letters and numbers are allowed in User Name. </div><br>";
-            echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
-        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            echo "<div class='php-message'> Email ($email) format incorrect. </div><br>";
-            echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
-        } elseif (!preg_match("/^[\w-.]+$/", $affiliation)) {
-            echo "<div class='php-message'> Affiliation: Please use only alphanumerical characters ($affiliation). </div><br>";
-            echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
+
+    if (!preg_match("/^[\w-.]+$/", $name_first)) {
+        echo "<div class='php-message'> Only letters are allowed in First Name. </div><br>";
+//        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
+    } elseif (!preg_match("/^[\w-.]+$/", $name_last)) {
+        echo "<div class='php-message'> Only letters are allowed in Last Name. </div><br>";
+//        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
+    } elseif (!preg_match("/^[\w-.]+$/", $username)) {
+        echo "<div class='php-message'> Only letters and numbers are allowed in User Name. </div><br>";
+//        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "<div class='php-message'> Email ($email) format incorrect. </div><br>";
+//        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
+    } elseif (!preg_match("/^[\w-.]+$/", $affiliation)) {
+        echo "<div class='php-message'> Affiliation: Please use only alphanumerical characters ($affiliation). </div><br>";
+//        echo '<meta http-equiv=REFRESH CONTENT=5;url=signup.php>';
 //            exit("Redirecting you back to the sign-up page...");
-            error_log("There's an error with your input. ", 0);
+        error_log("There's an error with your input. ", 0);
+        exit();
+    } else {
+
+        // ### password hash
+        $pass_hash = password_hash($pwd1, PASSWORD_DEFAULT);
+        // ### generate verification token
+        $account_verify_token = substr("abcdefghijklmnopqrstuvwxyz", mt_rand(0, 25), 1) . substr(md5(time()), 1);
+
+        // ### check email availability
+        $result = $pdo->query("SELECT email FROM user WHERE email = '$email' ")->fetch();
+        $email_db = $result['email'];
+        if (!empty($email_db)) {
+            error_log("Email address taken", 0);
+            echo "<div class='php-message'>
+                        Email taken. Redirecting...
+                        </div>;
+                <meta http-equiv=REFRESH CONTENT=15;url=$p/index.php>";
             exit();
         } else {
 
-            $pass_hash = password_hash($pwd1, PASSWORD_DEFAULT);
-//        generate a toekn
-            $token = substr("abcdefghijklmnopqrstuvwxyz", mt_rand(0, 25), 1) . substr(md5(time()), 1);
+            // ### insert user account information
+            try {
+                $sql = "INSERT INTO user (email, password, username, name_first, name_last, affiliation, account_verify_token ) VALUES (?, ?, ?, ?, ?, ?, ?)";
+                $stmt = $pdo->prepare($sql);
+                $stmt->execute([$email, $pass_hash, $username, $name_first, $name_last, $affiliation, $account_verify_token]);
 
-            $result = $pdo->query("SELECT email FROM user WHERE email = '$email' ")->fetch();
-            $email_db = $result['email'];
-            if (!empty($email_db)) {
-                error_log("Email address taken", 0);
-                echo "<div class='php-message'>
-                        Email taken. Redirecting...
-                        </div>;
-                <meta http-equiv=REFRESH CONTENT=5;url=$root/hbdi/index.php>";
-                exit();
-            } else {
+                // ##### send email with token link #####
+                $link = "<a href='$p/user/signup_verify.php?key=" . $email . "&verify=" . $account_verify_token . "'> Click to confirm account creation</a>";
+                // ### http://talkerscode.com/webtricks/password-reset-system-using-php.php
                 try {
-                    $sql = "INSERT INTO user (email, password, username, name_first, name_last, affiliation, account_verify_token ) VALUES (?, ?, ?, ?, ?, ?, ?)";
-                    $stmt = $pdo->prepare($sql);
-                    $stmt->execute([$email, $pass_hash, $username, $name_first, $name_last, $affiliation, $token]);
+                    // ### the headers: https://stackoverflow.com/questions/28026932/php-warning-mail-sendmail-from-not-set-in-php-ini-or-custom-from-head
+                    $headers = 'MIME-Version: 1.0' . "\r\n";
+                    $headers .= 'From: admin@hbdi<admin@hbdi.fsu.edu>' . "\r\n";
+                    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-/// send email with token link
-                    $link = "<a href='$root/user/signup_verify.php?key=" . $email . "&verify=" . $token . "'> Click to confirm account creation</a>";
-/// http://talkerscode.com/webtricks/password-reset-system-using-php.php
-                    try {
-// the headers: https://stackoverflow.com/questions/28026932/php-warning-mail-sendmail-from-not-set-in-php-ini-or-custom-from-head
-                        $headers = 'MIME-Version: 1.0' . "\r\n";
-                        $headers .= 'From: admin@hbdi<admin@hbdi.fsu.edu>' . "\r\n";
-                        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-
-// the message
-                        $msg = "
+// ### the message ###
+                    $msg = "
 DO NOT reply to this email. Contact the website administrator for support or questions. <br><br>
 Please click on the link to verify your new account: $link. <br>
 
 If the link is not working for you, please copy and paste the URL below
 and paste to the address bar of your browser and hit enter to reset your password:<br>
-http://tychen.us/hbdi/user/account_verify.php?key=$email&reset=$token
+http://tychen.us/hbdi/user/account_verify.php?key=$email&reset=$account_verify_token
 ";
 
-// use wordwrap() if lines are longer than 70 characters
-                        $msg = wordwrap($msg, 70);
-// send email
-                        mail("$email", "HBDI: Confirm Account Creation", "$msg", "$headers");
-// message user
-                        echo "
-<div class='php-message'>
-<span>
-Confirmation email sent. Redirecting... 
-</span>
-</div>
-";
-
-
-//        Go back to login
-                        echo "<meta http-equiv=REFRESH CONTENT=10;url=$root/index.php>";
-                    } catch (Exception $exception) {
-                        echo $exception;
-                    }
-
-                    echo '<meta http-equiv=REFRESH CONTENT=10;url=login.php>';
-                    exit();
-
-                } catch (PDOException $e) {
+// ### use wordwrap() if lines are longer than 70 characters
+                    $msg = wordwrap($msg, 70);
+// ### send email
+                    mail("$email", "HBDI: Confirm Account Creation", "$msg", "$headers");
+// ### message user
                     echo "
 <div class='php-message'>
-    Account not created. <br>
-    Please try signing up again. <br>
-    The error message is as below: <br></div>" .
-                        $e->getMessage();
-                    echo '<meta http-equiv=REFRESH CONTENT=15;url=signup.php>';
+<span>
+Confirmation email sent. Redirecting...
+</span>
+</div>
+                ";
+
+
+// ### Go back to home
+                    echo "<meta http-equiv=REFRESH CONTENT=10;url=$p/index.php>";
+// ### send email exception
+                } catch
+                (Exception $emailException) {
+                    echo $emailException;
                 }
+
+                echo "<meta http-equiv=REFRESH CONTENT=15;url=$p/index.php>";
+                error_log("the web path here is: $p", 0);
+                exit();
+// ### insert user account information exception
+            } catch (PDOException $e) {
+                echo "
+                        <div class='php-message' >
+                        Account not created . <br >
+                        Please try signing up again . <br >
+                        The error message is as below: <br ></div > " . $e->getMessage();
+                echo '<meta http-equiv=REFRESH CONTENT=15;url=signup.php>';
             }
+//    }
+//        }
+//    } catch (Exception $e) {
+//        echo "error!";
+//        echo $e->getMessage();
         }
-    } catch (Exception $e) {
-        echo "error!";
-        echo $e->getMessage();
     }
 }
 ?>
 <!-- ##### END of SIgn up Processing ##### -->
-
-
-<?php
-//if (isset($_SESSION['email_hbdi'])) {
-//    echo "You are already signed in as" . $_SESSION['username'] . ".";
-//    die ('<meta http-equiv=REFRESH CONTENT=5;url=../dashboard.php>');
-//} else { ?>
 
 
 <script type="text/javascript">
@@ -623,9 +597,11 @@ Confirmation email sent. Redirecting...
     function validateEmail(email) {
         // var reg = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
         // Not good. didn't detect $$### only @@ https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
-        var reg = /^[-!#$%&'*+/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+/0-9=?A-Z^_a-z{|}~])*@[a-zA-Z](-?[a-zA-Z0-9])*(\.[a-zA-Z](-?[a-zA-Z0-9])*)+$/;
+        var
+            reg = /^[-!#$%&'*+/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+/0-9=?A-Z^_a-z{|}~])*@[a-zA-Z](-?[a-zA-Z0-9])*(\.[a-zA-Z](-?[a-zA-Z0-9])*)+$/;
         return reg.test(email);
     }
+
 </script>
 
 
@@ -674,4 +650,5 @@ Confirmation email sent. Redirecting...
     //         navbar.classList.remove("sticky");
     //     }
     // }
+
 </script>

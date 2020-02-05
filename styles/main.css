@@ -20,8 +20,8 @@ body {padding: 0; margin: 0;
 .section-column {vertical-align: top; display: inline-block; }
 .section-pane {display: inline-block; vertical-align: text-top; border-radius: 2px; padding: 5px; width: 100%; overflow: hidden }
 .section-pane .pane-header {padding: 3px 0; border-bottom: 2px solid #CEB888; border-right: 1px solid #CEB888; border-radius: 3px }
-.section-pane .pane-header .title {display: inline-block; text-overflow: ellipsis; white-space: nowrap; font-weight: bold; text-decoration: none; color: #782f40}
-.section-pane .pane-header .title a {text-decoration: none; color: #782f40}
+.section-pane .pane-header .title {display: inline-block; text-overflow: ellipsis; white-space: nowrap; font-weight: bold; text-decoration: none; color: #782F40}
+.section-pane .pane-header .title a {text-decoration: none; color: #782F40}
 .section-pane .pane-content {vertical-align: text-top; width: 100%; border: green; color: #505050}
 .section-pane .pane-content .content-header {display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #949494; padding: 0; margin: 0; border: crimson}
 .section-pane .pane-content .content-title {white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #915664; font-weight: 500}
@@ -54,23 +54,19 @@ button:hover { opacity: 0.8;}
 #prevBtn { background-color: #BBBBBB; width: 70px; margin: 15px 1px; padding: 7px 1px; border-radius: 3px;}
 #nextBtn { background: darkgrey; margin: 15px 1px; padding: 7px 1px; border-radius: 3px; width: 70px;}
 .php-message {
-<<<<<<< HEAD
-    /*width: 280px;*/
-    /*margin: auto;*/
     /*position: relative; */
-    top: 5px;
+    top: 55px;
     /*left: 45px;*/
     /*display: flex;*/
-    text-align: right
-=======
-    width: 200px;
-    /*margin: auto;*/
+    text-align: left;
+    border-radius: 5px;
     position: fixed;
-    top: 75px;
-    right: 5px;
-    /*display: flex;*/
-    text-align: right;
->>>>>>> 2df5ac8d4c069e95816d93b93dfe287ff7c104d3
+    right: 25px;
+    border: 5px double black;
+    background-color: darkred;
+    padding: 5px 25px 5px 25px;
+    color: white;
+    font-weight: bold;
 }
 .message-blink {
     width: 250px;
@@ -83,10 +79,10 @@ button:hover { opacity: 0.8;}
 @-webkit-keyframes animation-warning {
     0%, 49% {
         background-color: rgb(226, 226, 226);
-        border: 1px solid #eeeeee;
+        border: 1px solid #EEEEEE;
     }
     50%, 100% {
-        background-color: #eeeeee;
+        background-color: #EEEEEE;
         border: 1px solid rgb(221, 221, 221);
     }
 }
@@ -111,87 +107,59 @@ button:hover { opacity: 0.8;}
 }
 /*navbar is a bootstrap class*/
 /*  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar  */
-.nav-hbdi {
-    width: 100%;
-    /*max-width: 900px; */
-    margin: 0 auto;
-    background-color: #782F40; color: white;
-    /*overflow: hidden;*/ /* This will cover menu dropdown */
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+.navbar {
+    background-color: #780a0d;
+    padding: 0 10%;
 }
-.nav-hbdi a:hover {background-color: #782F40; color: red; border: white; }
-.nav-hbdi-item {
-    display: inline-block;
-    float: left;
-    /*padding: 15px 1px 0 1px; */
-    border: gold;
-    overflow: hidden;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-}
-.nav-hbdi-item a { background-color: #782F40; color: white; }
-.nav-hbdi-item a:hover { background-color: white; color: #782F40}
-.nav-hbdi-right {display: inline-block; float: right; border: mediumvioletred; }
-.nav-hbdi-right a {
-    float: left;
-    display: inline-block;
-    font-size: 15px;
+.nav-link, .nav-item {
+    height: 35px;
     color: white;
-    text-align: center;
-    padding: 16px 8px 4px 8px;
+}
+.nav-link a {
     text-decoration: none !important;
-    border: yellow;
 }
-.nav-hbdi-right a:hover, .dropdown-hbdi:hover {
-    background-color: #CEB888;
+.nav-item {
     color: white;
 }
-.dropdown-hbdi {
+.nav-item a:hover {
+    text-decoration: none;
+    color: dimgray !important;
+}
+.dropdown {
     float: left;
     display: inline-block;
-    overflow: hidden;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-    /*    Overflow will cause */
+    /*overflow: hidden;*/
+    /*    Overflow hidden will hide the dropdown menu */
+    /*border-top-right-radius: 3px;*/
+    /*border-top-left-radius: 3px;*/
+    /*height: 33px;*/
+    /*border-top: 15px;*/
 }
-.dropdown-hbdi .dropbtn-hbdi {
-    font-size: 16px;
-    outline: none;
-    color: white;
-    /*padding: 8px 8px;*/
+.navbar-brand {
     padding: 0;
-    background-color: inherit;
-    /*font-family: inherit; margin: 0;*/
-    /*border: 2px solid orange;*/
-}
-.dropbtn-hbdi a:hover { color: white;
-    /*border-top-right-radius: 10px;*/
-    /*border-top-left-radius: 10px;*/
-}
-.dropdown-hbdi-content {
-    display: none;
+    margin: 0;
+    border: 1px solid green;
     position: absolute;
-    top: 40px;
-    /*background-color: #CEB888;*/
-    min-width: 150px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    /*top: 1px;*/
 }
-.dropdown-hbdi-content a {
-    float: none;
-    /*color: white;*/
-    text-align: left;
-    padding: 3px 4px 3px 9px;
-    text-decoration: none;
-    display: block;
-    background-color: #CEB888;
+.dropdown-item a {
+    color: #737373 !important;
+}
+.navbar-brand a {
+    margin: 0;
+    padding: 0;
+    border: 1px solid red;
+}
+.navbar-brand img {
+    padding: 0;
+    margin: 0;
+    border: 1px solid yellow;
 }
 .dropdown-hbdi-content a:hover {
     background-color: #782F40;
     color: white;
     text-decoration: none;
-    padding: 3px 4px 3px 9px;
+    /*padding: 3px 4px 3px 9px;*/
     border-top: 1px solid #915664;
     border-bottom: 1px solid #915664;
 }
@@ -392,7 +360,7 @@ p {font-size: 16px;color: #434343;line-height: 24px !important;text-align: left;
     color: #782F40;
 }
 .footer .block:hover, a:hover {
-    color: #3d3d3d
+    color: #3D3D3D
 }
 .scrolling > footer { height: 0; opacity: 0; }
 input[type='checkbox'] {
@@ -423,7 +391,7 @@ input[type='checkbox'] + label {
     outline: none;
     font-size: 15px;
 }
-.active, .collapsible:hover { background-color: #D9D9D9;}
+.active, .collapsible:hover { background-color: #f0f0f0;}
 .content { padding: 0 18px; display: none; overflow: hidden; background-color: #F1F1F1;}
 .open-button { background-color: #555555; color: white;border: none; cursor: pointer; opacity: 0.8;
     /*position: fixed;*/

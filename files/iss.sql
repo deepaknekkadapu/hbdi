@@ -7,6 +7,10 @@
 -- Server version: 5.6.39-cll-lve
 -- PHP Version: 5.6.30
 
+
+CREATE DATABASE IF NOT EXISTS iss; 
+USE iss;
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
